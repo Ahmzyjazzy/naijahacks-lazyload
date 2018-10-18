@@ -1,8 +1,8 @@
 # NaijaHacks Hackathon 2018
 
-## LazyLoad
+## Team LazyLoad
 
-### Members
+### Team Members
 
 - Adegoke Toheeb Adewale, atoheeb39@gmail.com
 - Olanrewaju Ahmed Olayinka, hollaraywaju@gmail.com
