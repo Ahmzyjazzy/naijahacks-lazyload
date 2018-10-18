@@ -32,4 +32,4 @@ Node, ReactJs, Apollo client, GraphQL and MongoDB
 improve education in Nigeria.
 - A good resource for students to find where to learn and who to learn from and also for parent to find instructors/teachers for their kids.
 - Provide revenue for instructors/tutorial centers/work-space owners.
-- Reduce rate of unemployment in Nigeria (As any st)
+- Reduce rate of unemployment in Nigeria.
