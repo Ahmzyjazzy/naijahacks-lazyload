@@ -2,7 +2,17 @@
   "name": "naijahacks-lazyload",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --port 4900 --compress --mode development",
+    "dev": "webpack --mode development --progress",
+    "build": "webpack --mode production --progress"
+  },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "apollo-boost": "^0.1.16",
     "cors": "^2.8.4",
     "express": "^4.16.4",
@@ -13,19 +23,16 @@
     "react-apollo": "^2.2.4",
     "react-dom": "^16.5.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",    
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^4.0.0-beta.2",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
 }
