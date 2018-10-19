@@ -24,7 +24,7 @@ enterpreneural skills acqusition.
 
 # Proposed Stack
 
-Node, ReactJs, Apollo client, GraphQL and MongoDB
+Node, ReactJs, Apollo client, GraphQL and MongoDB (with mlab)
 
 # Benefit
 
