@@ -7,7 +7,7 @@
   "keywords": [],
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --port 4900 --compress --mode development",
+    "start": "webpack-dev-server --open --port 5000 --compress --mode development",
     "dev": "webpack --mode development --progress",
     "build": "webpack --mode production --progress"
   },
@@ -18,10 +18,14 @@
     "express": "^4.16.4",
     "express-graphql": "^0.6.12",
     "lodash": "^4.17.11",
+    "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.3.4",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
-    "react-dom": "^16.5.2"
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -31,6 +35,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
     "html-webpack-plugin": "^4.0.0-beta.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.21.0",
