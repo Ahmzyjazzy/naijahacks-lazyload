@@ -17,14 +17,11 @@
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "express-graphql": "^0.6.12",
-    "graphql": "^14.0.2",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.4",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
-    "react-dom": "^16.5.2",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"    
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
