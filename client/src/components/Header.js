@@ -7,9 +7,6 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
 
     render(){
-
-        console.log(`..header`, this.props)
-
         return(
             <nav style={{backgroundColor: 'white'}} className="navbar-fixed">
                 <div className="nav-wrapper">
