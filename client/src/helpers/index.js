@@ -1,3 +1,8 @@
-const customBtnColor = 'linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important'
 
-export { customBtnColor };
+const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export { 
+    capitalizeFirstLetter 
+};

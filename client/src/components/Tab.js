@@ -1,7 +1,7 @@
-import React from 'react';
-import SearchContainer from './SearchContainer'
+import React, { Component } from 'react';
+import { capitalizeFirstLetter as capitalise } from '../helpers'
 
-export default class Main {
+export default class Tab extends Component {
 
   constructor(props){
     super(props)
@@ -11,24 +11,30 @@ export default class Main {
   }
 
   handleToggle(e){
-    console.log(e)
+    console.log(e.target)
   }
 
-  return(){
+  render(){
+
+    const tabList = this.props.tabList;
+    const tabIndex = this.state.tabIndex;
+
     return (
         <div className="row">
           <div className="col s12">
-            <ul className="tabs">
-              <li className="tab col s3"><a className={tabIndex == 0 ? "active" : ""} onClick={ (e)=> this.handleToggle(e)} >Test 1</a></li>
-              <li className="tab col s3"><a className={tabIndex == 1 ? "active" : ""} onClick={ (e)=> this.handleToggle(e)}>Test 2</a></li>
-              <li className="tab col s3"><a className={tabIndex == 2 ? "active" : ""} onClick={ (e)=> this.handleToggle(e)}>Tab 3</a></li>
-              <li className="tab col s3"><a className={tabIndex == 3 ? "active" : ""} onClick={ (e)=> this.handleToggle(e)}>Test 4</a></li>
+            <ul className="tabs" style={{color:'rgb(227, 233, 237)'}}>
+            {tabList.map( (item, i)=> {
+                return (
+                    <li className="tab col" style={{textTransform:'capitalize'}} key={i}><a className={tabIndex == 0 ? "active" : ""} onClick={ (e)=> this.handleToggle(e)} >{capitalise(item)}</a></li>
+                )
+            })}
             </ul>
           </div>
-          <div id="test1" className="col s12" className={tabIndex == 3 ? "active" : ""}>Test 1</div>
-          <div id="test2" className="col s12" className={tabIndex == 4 ? "active" : ""}>Test 2</div>
-          <div id="test3" className="col s12" className={tabIndex == 5 ? "active" : ""}>Test 3</div>
-          <div id="test4" className="col s12" className={tabIndex == 6 ? "active" : ""}>Test 4</div>
+          {tabList.map( (item, i)=> {
+                return (
+                    <div id={i} className="col s12" className={tabIndex == 3 ? "active" : "hidden"} key={i}>{capitalise(item)}</div>
+                )
+            })}
         </div>
     )
   }
