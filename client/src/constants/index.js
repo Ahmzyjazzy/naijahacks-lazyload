@@ -11,9 +11,12 @@ const APP_LOGO = (()=> {
     )
 })();
 
+const THEME_BG_COLOR = 'linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important'
+
 
 
 export {
     APP_NAME,
-    APP_LOGO
+    APP_LOGO,
+    THEME_BG_COLOR
 }

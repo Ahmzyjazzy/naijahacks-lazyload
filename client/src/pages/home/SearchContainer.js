@@ -24,9 +24,7 @@ export default class SearchContainer extends Component {
         console.log(`plugin initialize`)
     }
 
-    render(){
-
-        
+    render(){        
 
         return (
             <form className="col s12">
