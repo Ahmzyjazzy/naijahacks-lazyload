@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
-	fullName: String,
+const emailTokenSchema = new Schema({
 	email: String,
-	password: String,
+	token: String,
 	createdAt: TimeStamp,
     updatedAt: TimeStamp
 });
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('EmailToken', emailTokenSchema);
