@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon4 } from '../helpers/svg'
+import { APP_LOGO } from '../constants'
 import { Link } from 'react-router-dom'
 
 
@@ -16,11 +16,11 @@ class Header extends React.Component {
                         padding: '0 15px',
                         background: '#222'
                     }}>
-                        <Icon4 align="center" /><span style={{color:'#fff'}}>onnecto</span>                                                                                                                                                                                      
+                        {APP_LOGO}                                                                                                                                                                                     
                     </a>
                                  
                     <ul id="nav-mobile" className="right hide-on-med-and-down" style={{padding: '0 10px'}}>
-                        <li><Link to="/create-instructor" className="black-text">Become an Instructor</Link></li>
+                        <li><Link to="/instructor-signup" className="black-text">Become an Instructor</Link></li>
                         <li><Link to="/create-workspace" className="black-text">Create Workspace</Link></li>
                         <li><Link to="/frequenty_asked_questions" className="black-text">FAQs</Link></li>
                         <li>

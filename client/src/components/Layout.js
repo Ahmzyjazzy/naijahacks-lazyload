@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Header from './Header'
 import Footer from './Footer'
-import Main from './Main'
+import Main from '../pages/Home/Main'
 
 class Layout extends Component {
 
@@ -9,8 +9,8 @@ class Layout extends Component {
         return (
             <Fragment>
                 <Header />
-                {/* <Main />
-                <Footer /> */}
+                <Main />
+                <Footer />
             </Fragment>   
         )
     }
