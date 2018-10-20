@@ -1,6 +1,6 @@
 const graphql = require('graphql');
 const UserModel = require('../models/userModel');
-const UserType = require('../types/userType');
+const UserType = require('./userType');
 
 const {GraphQLObjectType,GraphQLString, GraphQLList} = graphql;
 module.exports =  new GraphQLObjectType({

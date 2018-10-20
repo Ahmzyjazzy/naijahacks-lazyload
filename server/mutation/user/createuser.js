@@ -3,7 +3,7 @@ const User = require('../../models/userModel');
 const {GraphQLString} = require('graphql');
 
 
-module.exports = addAuthor = {
+module.exports = {
     type: UserType,
     args: {
         fullName: {type: GraphQLString},

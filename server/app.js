@@ -8,9 +8,9 @@ const app = express(); //invoke the server function
 
 app.use(cors()); //allow cross origin requests
 
-process.env.NODE_ENV = 'development';
+// process.env.NODE_ENV = 'development';
 
-console.log(' env ? ', process.env.NODE_ENV == 'development')
+console.log(' env ? ', process.env.NODE_ENV == 'development', process.env.NODE_ENV)
 
 const url = (process.env.NODE_ENV == 'development') ? 'mongodb://localhost:27017/connecto' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/connecto';
 

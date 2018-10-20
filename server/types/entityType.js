@@ -1,5 +1,5 @@
 const graphql = require('graphql');
-const UserType = require('../types/userType');
+const UserType = require('./userType');
 const ReviewType = require('../types/reviewType');
 
 const {GraphQLObjectType,GraphQLString,GraphQLBoolean} = graphql;
