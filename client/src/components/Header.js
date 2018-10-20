@@ -7,12 +7,6 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
 
     render(){
-<<<<<<< HEAD
-=======
-
-        console.log(`..header`, this.props)
-
->>>>>>> f39150242155aa88d317bdbede35e77fd6b8369d
         return(
             <nav style={{backgroundColor: 'white'}} className="navbar-fixed">
                 <div className="nav-wrapper">
