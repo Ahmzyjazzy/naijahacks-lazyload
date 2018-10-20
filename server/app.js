@@ -12,7 +12,7 @@ process.env.NODE_ENV = 'development';
 
 console.log(' env ? ', process.env.NODE_ENV == 'development')
 
-const url = (process.env.NODE_ENV == 'development') ? 'mongodb://localhost:27017/myproject' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/bookstore';
+const url = (process.env.NODE_ENV == 'development') ? 'mongodb://localhost:27017/connecto' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/connecto';
 
 //connect to mlab database
 mongoose.connect(url,{useNewUrlParser: true})
