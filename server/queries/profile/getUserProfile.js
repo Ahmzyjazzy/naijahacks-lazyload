@@ -3,7 +3,7 @@ import User from '../../models/userModel'
 import {GraphQLString} from 'graphql'
 
 module.exports = {
-    type: UserType,
+    type: UserProfileType,
     args: {
         fullName: {type: GraphQLString},
         email:  {type: GraphQLString},

@@ -4,10 +4,10 @@ const {
 } = require('graphql');
 
 /*TODO: import all queries*/
-import getUser from '../queries/login/getUserDetail';
+const getUser = require('../queries/login/getUserDetail');
 
 /*TODO: import all mutations*/
-import createUser from '../mutation/user/createUser';
+const addUser = require('../mutation/user/addUser');
 
 module.exports = new GraphQLSchema({
     query: new GraphQLObjectType({
@@ -21,7 +21,7 @@ module.exports = new GraphQLSchema({
         name: 'Mutation',
         fields: {
         /* list all mutations here */
-            createUser,
+            addUser,
         }
     })
 });
