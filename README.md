@@ -34,6 +34,7 @@ improve education in Nigeria.
 - Provide revenue for instructors/tutorial centers/work-space owners.
 - Reduce rate of unemployment in Nigeria.
 
+
 # How to setup project and run locally
 
 ### Clone the repository 
@@ -83,6 +84,13 @@ Using npm
 ```
 npm start
 ```
+
+### Top-level directory layout
+
+    .
+    ├── public                  # Compiled files (alternatively `dist`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    └── README.md               
 
 
 
