@@ -15,7 +15,7 @@ class Header extends React.Component {
         return(
             <nav style={{backgroundColor: 'white'}} className="navbar-fixed">
                 <div className="nav-wrapper">
-                    <a href="#" className="brand-logo left" style={{
+                    <Link to="/" className="brand-logo left" style={{
                         display: 'flex',
                         height: '100%',
                         justifyContent: 'space-around',
@@ -23,7 +23,7 @@ class Header extends React.Component {
                         background: '#222'
                     }}>
                         {APP_LOGO}                                                                                                                                                                                     
-                    </a>
+                    </Link>
                                  
                     <ul id="nav-mobile" className="right hide-on-med-and-down" style={{padding: '0 10px'}}>
                         <li><Link to="/instructor-signup" className="black-text">Become an Instructor</Link></li>

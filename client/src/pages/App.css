@@ -52,6 +52,21 @@
   text-align: center;
 }
 
+/* filter */
+.filter-container{  
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 0 10px;
+  margin: 0 0;
+  height: 49px;
+}
+
+.filter-container li a {
+  color: #222 !important;
+}
+
+.filter-container li.active {
+  border-bottom: 3px solid  #222;
+}
 
 /* footer */
 .page-footer {

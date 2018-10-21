@@ -2,3 +2,7 @@ client/node_modules
 server/node_modules
 
 client/public
+
+.idea
+
+naijahacks-lazyload.iml

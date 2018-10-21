@@ -12,6 +12,17 @@ body {
   overflow-x: hidden;
 }
 
-main {
+/* main {
   flex: 1 1 auto;
+  background-color: #222;
+  color: #fff;
+  min-height: 500px;
 }
+
+nav {
+  background-color: #222;
+}
+
+root {
+  background-color: #222;
+} */

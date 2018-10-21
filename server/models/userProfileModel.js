@@ -17,7 +17,7 @@ const userProfileSchema = new Schema({
     city: String,
     state: String, 
     zip: String, 
-    userType: String
+    userType: String,
     createdAt: TimeStamp,
     updatedAt: TimeStamp,
 });
