@@ -10,13 +10,9 @@ app.use(cors()); //allow cross origin requests
 
 process.env.NODE_ENV = 'development';
 
-<<<<<<< HEAD
-const url = (process.env.NODE_ENV === 'development') ? 'mongodb://localhost:27017/connecto' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/connecto';
-=======
 console.log(' env ? ', process.env.NODE_ENV == 'development', process.env.NODE_ENV);
 
 const url = 'mongodb://lazyload:lazyload3@ds237373.mlab.com:37373/connecto'; //(process.env.NODE_ENV == 'development') ? 'mongodb://localhost:27017/connecto' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/connecto';
->>>>>>> 89c8443d0b30537df7761aaef2e4151ee48a00bb
 
 //connect to mlab database
 mongoose.connect(url,{useNewUrlParser: true})
