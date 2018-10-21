@@ -1,6 +1,7 @@
-import UserType from '../../types/userType'
-import User from '../../models/userModel'
-import {GraphQLString} from 'graphql'
+import UserType from '../../types/userType';
+import User from '../../models/userModel';
+import UserProfileType from '../../types/userProfileType';
+import {GraphQLString} from 'graphql';
 
 module.exports = {
     type: UserProfileType,
