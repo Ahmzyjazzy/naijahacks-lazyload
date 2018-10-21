@@ -4,7 +4,7 @@ const {
 } = require('graphql');
 
 /*TODO: import all queries*/
-const getUser = require('../queries/login/getUserDetail');
+const getUserDetail = require('../queries/getUserDetail');
 
 /*TODO: import all mutations*/
 const addUser = require('../mutation/user/addUser');
@@ -14,7 +14,7 @@ module.exports = new GraphQLSchema({
         name: 'Query',
         fields: {
         /* list all queries here */
-            getUser,
+            getUserDetail,
         },
     }),
     mutation: new GraphQLObjectType({

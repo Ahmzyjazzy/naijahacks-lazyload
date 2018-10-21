@@ -9,6 +9,7 @@ module.exports = {
         fullName: {type: GraphQLString},
         email:  {type: GraphQLString},
         password:  {type: GraphQLString},
+        phoneNumber: {type: GraphQLString},
         createdAt:  {type: GraphQLString},
         updatedAt:  {type: GraphQLString}
     },
@@ -16,6 +17,7 @@ module.exports = {
         let user = new User({
             fullName: args.fullName,
             email: args.email,
+            phoneNumber: args.phoneNumber,
             password: args.password,
             createdAt: new Date().getTime(),
             updatedAt: new Date().getTime()

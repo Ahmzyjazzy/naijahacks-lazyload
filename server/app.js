@@ -1,8 +1,8 @@
-import express from 'express'
-import graphqlHTTP from 'express-graphql'
-import schema from './schema/schema'
-import mongoose from 'mongoose'
-import cors from 'cors'
+const express = require('express');
+const graphqlHTTP = require('express-graphql');
+const schema = require('./schema/schema');
+const mongoose = require('mongoose');
+const cors = require('cors');
  
 const app = express(); //invoke the server function
 
@@ -18,7 +18,7 @@ const url = 'mongodb://lazyload:lazyload3@ds237373.mlab.com:37373/connecto'; //(
 mongoose.connect(url,{useNewUrlParser: true})
 mongoose.connection.once('open', ()=>{
     console.log('connected to database');
-})
+});
 
 
 //setup graphql endpoint middleware

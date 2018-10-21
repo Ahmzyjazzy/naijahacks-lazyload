@@ -15,11 +15,10 @@ const userProfileSchema = new Schema({
     preferredLanguage: String,
     country: String,
     city: String,
-    state: String, 
-    zip: String, 
+    state: String,
     userType: String,
-    createdAt: TimeStamp,
-    updatedAt: TimeStamp,
+    createdAt: String,
+    updatedAt: String,
 });
 
 module.exports = mongoose.model('UserProfile', userProfileSchema);
