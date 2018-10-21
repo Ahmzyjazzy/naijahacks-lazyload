@@ -33,3 +33,59 @@ improve education in Nigeria.
 - A good resource for students to find where to learn and who to learn from and also for parent to find instructors/teachers for their kids.
 - Provide revenue for instructors/tutorial centers/work-space owners.
 - Reduce rate of unemployment in Nigeria.
+
+# How to setup project and run locally
+
+- Clone the repository 
+
+```
+git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload/tree/development.git
+```
+
+## Start watching the file and changes
+
+Using Yarn
+
+```
+yarn run watch
+```
+
+Using npm
+
+```
+npm run watch
+```
+
+## Start the development server to serve static files and connect to database
+
+Using Yarn
+
+```
+yarn run serve
+```
+
+Using npm
+
+```
+npm run serve
+```
+
+## Start project to test from the browser, it will automatc open the browser using --open flag
+
+Using Yarn
+
+```
+yarn star
+```
+
+Using npm
+
+```
+npm start
+```
+
+
+
+
+
+
