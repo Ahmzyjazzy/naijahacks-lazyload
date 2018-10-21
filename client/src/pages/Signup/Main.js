@@ -1,34 +1,47 @@
 import React from 'react';
-import SearchContainer from './SearchContainer'
+import instImage from '../../assets/images/inst1.png';
+import { Link } from 'react-router-dom'
+
 
 export default props => {
   return (
-    <main>
-        <div className="row text-center">
-          <h2 className="flow-text text-center">
-            <span style={{color:'rgb(233, 30, 99)'}} className="customTxt">43,554</span> Instructors & Tutorial Centres Accross <span style={{color:'rgb(30, 77, 146)'}} className="customTxt">Africa</span>
-          </h2>
-          <p className="text-center subdesc">Connecting you to professional near you. Brought to you by the largest global community of creatives.</p>
-          <SearchContainer />
-        </div>
-        <div className="row">
-        <div className="col s12">
-          <ul className="tabs">
-            <li className="tab col s3"><a href="#test1">Test 1</a></li>
-            <li className="tab col s3"><a className="active" href="#test2">Test 2</a></li>
-            <li className="tab col s3"><a href="#test3">Tab 3</a></li>
-            <li className="tab col s3"><a href="#test4">Test 4</a></li>
-          </ul>
-        </div>
-        <div id="test1" className="col s12">Test 1</div>
-        <div id="test2" className="col s12">Test 2</div>
-        <div id="test3" className="col s12">Test 3</div>
-        <div id="test4" className="col s12">Test 4</div>
-      </div>
-        <div className="row">
-            <div cl ass="col s3">1</div>
-            <div className="col s6">2</div>
-            <div className="col s3">3</div>
+    <main className="signupBg">
+        <div className="row" style={{marginBottom: '0px',padding: '50px 100px'}}>
+            <div className="col m5 formContainer" style={{}}>
+              <h4 style={{textAlign:'center'}}>Create an account</h4>
+              <p style={{textAlign: 'center'}}>or <Link to="/login" style={{textDecoration: 'underline'}} className="black-text">sign in to your account</Link></p>
+              <form className="">
+                <div className="input-field">
+                  <input id="first_name" type="text" />
+                  <label>Full Name</label>
+                </div>
+                <div className="input-field">
+                  <input id="last_name" type="text"/>
+                  <label>Phone</label>
+                </div>
+                <div className="input-field">
+                  <input id="email" type="email"/>
+                  <label>Email</label>
+                </div>
+                <div className="input-field">
+                  <input id="password" type="password"/>
+                  <label>Password</label>
+                </div>
+                <div className="input-field">
+                  <input id="password" type="password"/>
+                  <label>Confirm Password</label>
+                </div>
+                <button style={{}} className="btn waves-effect waves-light" type="submit" name="action">Get Started
+                  <i className="material-icons right">send</i>
+                </button>
+              </form>
+            </div>
+             <div className="col m7">      
+              <div className="container">
+                <img src={instImage} className="img-responsive"/>
+                <div className="centered">Connect with your favourite instructor </div>
+              </div>
+            </div>
         </div>
     </main>
   )
