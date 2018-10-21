@@ -1,5 +1,7 @@
 import React from 'react';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
+import { graphql, compose } from 'react-apollo';
+import { createUser, getProfileData } from '../../api/user';
 
 class RegisterForm extends React.Component {
     constructor(props) {
@@ -23,7 +25,16 @@ class RegisterForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log(this.state);
+        this.props.addBookMutation({
+            variables:{
+                fullName: `${this.state.first_name} ${this.state.last_name}` ,
+                email:  this.state.email,
+                password: this.state.password,
+                phoneNumber: this.state.phone,
+            },
+            //refetching query to update the ui
+            refetchQueries: [{ query: getProfileData }]
+        });  
     }
 
     render() {
@@ -55,7 +66,7 @@ class RegisterForm extends React.Component {
                     <input id="password2" type="password" onChange={(e)=> this.setState({password2: e.target.value})} />
                     <label>Confirm Password</label>
                 </div>
-                <button className="btn waves-effect waves-light" type="submit" name="action">Get Started
+                <button className="btn waves-effect waves-light" type="submit" name="action">Register
                     <i className="material-icons right">send</i>
                 </button>
               </form>
@@ -63,5 +74,11 @@ class RegisterForm extends React.Component {
     }
 }
 
-export default withRouter(RegisterForm)
+export default withRouter(
+    compose(
+        //binding multiple queries to one component
+        graphql(createUser, {name:"createUser"}),
+        graphql(getProfileData, {name:"getProfileData"})
+    )(RegisterForm)
+)
 
