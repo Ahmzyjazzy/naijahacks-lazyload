@@ -38,6 +38,7 @@ improve education in Nigeria.
 # Top-level directory layout
 
     .
+    ├── data                    # GraphQl files (alternatively `graphql` or `server`)
     ├── public                  # Compiled files (alternatively `dist`)
     ├── src                     # Source files (alternatively `lib` or `app`)
     └── README.md   
