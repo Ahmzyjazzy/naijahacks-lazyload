@@ -2,17 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5946023e-e0a4-4495-aa0f-0e882bf5f293" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/server/mutation/user/addUserProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/queries/getUserProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/queries/getUserDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/userModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/userProfileModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/userProfileModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mutation/user/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/mutation/user/addUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/queries/login/getUserDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/queries/getUserDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/queries/profile/getUserProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schema/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/types/userType.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/types/userType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/inst1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/inst1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/helpers/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/svg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Instructor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Instructor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Signup/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Signup/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Signup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Signup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Workspace/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Workspace/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/home/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/home/SearchContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/SearchContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/schema/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/schema/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/emailTokenModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/EmailToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/entityModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/Entity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/instructorConnectModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/InstructorConnect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/reviewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/serviceModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/Service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/userProfileModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/UserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mutation/user/addUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/mutation/user/addUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mutation/user/addUserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/mutation/user/addUserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/queries/getUserDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/queries/getUserProfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/queries/getUserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/queries/getUserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schema/schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/entityType.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/types/EntityType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/instructorConnectType.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/types/InstructorConnectType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/reviewType.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/types/ReviewType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/serviceType.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/types/ServiceType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/userProfileType.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/types/UserProfileType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/userType.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/types/UserType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,17 +79,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/app.js">
+      <file leaf-file-name="UserType.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/types/UserType.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="315">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/schema/schema.js">
+      <file leaf-file-name="UserProfileType.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/types/UserProfileType.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserProfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/models/UserProfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret lean-forward="true" />
@@ -45,38 +115,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userType.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/types/userType.js">
+      <file leaf-file-name="schema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/schema/schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="getUserProfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/queries/getUserProfile.js">
+        <entry file="file://$PROJECT_DIR$/data/queries/getUserProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="getUserDetail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/queries/getUserDetail.js">
+        <entry file="file://$PROJECT_DIR$/data/queries/getUserDetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="240">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="addUserProfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/mutation/user/addUserProfile.js">
+        <entry file="file://$PROJECT_DIR$/data/mutation/user/addUserProfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
                 <element signature="e#1030#1705#0" />
@@ -85,22 +155,9 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/userModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="addUser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/mutation/user/addUser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/data/mutation/user/addUser.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -130,6 +187,12 @@
         <option value="$PROJECT_DIR$/server/queries/getUserDetail.js" />
         <option value="$PROJECT_DIR$/server/types/userType.js" />
         <option value="$PROJECT_DIR$/server/app.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/data/schema/schema.js" />
+        <option value="$PROJECT_DIR$/data/queries/profile/getUserProfile.js" />
+        <option value="$PROJECT_DIR$/data/queries/getUserProfile.js" />
+        <option value="$PROJECT_DIR$/data/types/UserProfileType.js" />
+        <option value="$PROJECT_DIR$/data/types/UserType.js" />
       </list>
     </option>
   </component>
@@ -139,14 +202,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/client/node_modules" />
-    <handled-path value="$PROJECT_DIR$/server/node_modules" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/client/package.json" />
-      <path value="$PROJECT_DIR$/server/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpServers">
@@ -164,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -175,19 +240,24 @@
             <path>
               <item name="naijahacks-lazyload" type="b2602c69:ProjectViewProjectNode" />
               <item name="naijahacks-lazyload" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naijahacks-lazyload" type="b2602c69:ProjectViewProjectNode" />
               <item name="naijahacks-lazyload" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naijahacks-lazyload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="naijahacks-lazyload" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,6 +272,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/queries" />
+      <recent name="$PROJECT_DIR$/data/mutation/user" />
       <recent name="$PROJECT_DIR$/server/queries" />
     </key>
   </component>
@@ -275,11 +347,12 @@
       <updated>1540084140275</updated>
       <workItem from="1540084141600" duration="10099000" />
       <workItem from="1540095746478" duration="6280000" />
+      <workItem from="1540117656552" duration="1316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16379000" />
+    <option name="totallyTimeSpent" value="17695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="873" extended-state="6" />
@@ -287,16 +360,15 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.356875" side_tool="true" weight="0.49322492" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3294271" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.643125" visible="true" weight="0.16713881" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.643125" weight="0.16689847" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5027933" visible="true" weight="0.23958333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5027933" visible="true" weight="0.24414062" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.49720672" side_tool="true" weight="0.23958333" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -309,6 +381,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,17 +399,65 @@
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/schema/schema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="19" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/types/userType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/queries/getUserProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/queries/getUserDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/mutation/user/addUserProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#1030#1705#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/userModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/mutation/user/addUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js" />
+    <entry file="file://$PROJECT_DIR$/server/schema/schema.js" />
     <entry file="file://$PROJECT_DIR$/server/types/userType.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -359,13 +480,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/mutation/user/createuser.js" />
-    <entry file="file://$PROJECT_DIR$/server/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yarn.lock" />
     <entry file="file://$PROJECT_DIR$/server/queries/login/AddUserDetail.js" />
     <entry file="file://$PROJECT_DIR$/server/queries/login/checkuserexist.js" />
     <entry file="file:///usr/local/lib/node_modules/nodemon/lib/nodemon.js">
@@ -375,23 +490,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json" />
+    <entry file="file://$PROJECT_DIR$/server/package.json" />
+    <entry file="file://$PROJECT_DIR$/server/.gitignore" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -399,49 +500,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/userProfileModel.js">
+    <entry file="file://$PROJECT_DIR$/server/models/userProfileModel.js" />
+    <entry file="file://$PROJECT_DIR$/server/mutation/user/addUser.js" />
+    <entry file="file://$PROJECT_DIR$/server/schema/schema.js" />
+    <entry file="file://$PROJECT_DIR$/server/models/userModel.js" />
+    <entry file="file://$PROJECT_DIR$/server/app.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
+        <state relative-caret-position="-343" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/mutation/user/addUserProfile.js">
+    <entry file="file://$PROJECT_DIR$/data/mutation/user/addUser.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/mutation/user/addUserProfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
             <element signature="e#1030#1705#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/mutation/user/addUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/schema/schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/queries/getUserProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/types/userType.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -452,17 +531,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/userModel.js">
+    <entry file="file://$PROJECT_DIR$/server/queries/getUserProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
+    <entry file="file://$PROJECT_DIR$/server/types/userType.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/models/UserProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/queries/getUserDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/schema/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/queries/getUserProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/types/UserProfileType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/types/UserType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>

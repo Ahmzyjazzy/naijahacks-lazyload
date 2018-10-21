@@ -9,8 +9,8 @@
   "scripts": {
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "serve": "node index.js",
-    "start": "webpack-dev-server --open --port 5000 --compress --mode development"
+    "serve": "nodemon index.js",
+    "start": "webpack-dev-server --open --port 8000 --compress --mode development"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
@@ -18,6 +18,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
     "lodash": "^4.17.11",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.3.4",
@@ -43,5 +44,8 @@
     "webpack": "^4.21.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
+  },
+  "resolutions": {
+    "graphql": "^14.0.2"
   }
 }

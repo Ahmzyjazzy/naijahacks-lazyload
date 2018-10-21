@@ -1,10 +1,10 @@
 const graphql = require('graphql');
-const UserType = require('./userType');
-const ReviewType = require('../types/reviewType');
+const UserType = require('./UserType');
+const ReviewType = require('./ReviewType');
 
 const {GraphQLObjectType,GraphQLString,GraphQLBoolean} = graphql;
 module.exports =  new GraphQLObjectType({
-    name: 'Entity',
+    name: 'EntityType',
     fields: ()=> ({
         userId: {type: GraphQLString},
         entityName:  {type: GraphQLString},

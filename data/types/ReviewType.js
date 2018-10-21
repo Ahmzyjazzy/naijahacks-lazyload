@@ -1,21 +1,28 @@
 const graphql = require('graphql');
-const EntityType = require('../types/entityType');
+const UserType = require('./UserType');
+const EntityType = require('./EntityType');
 
 const {GraphQLObjectType,GraphQLString} = graphql;
 module.exports =  new GraphQLObjectType({
-    name: 'InstructorConnect',
+    name: 'ReviewType',
     fields: ()=> ({
+        userId: {type: GraphQLString},
         entityId: {type: GraphQLString},
-        name: {type: GraphQLString},
-        description: {type: GraphQLString},
-        serviceType: {type: GraphQLString},
+        rating: {type: GraphQLString},
+        reviewComment: {type: GraphQLString},
         createdAt: {type: GraphQLString},
-        updatedAt: {type: GraphQLString},
         entity: {
             type: EntityType,
             resolve(parent, args) {
                 // return _.find(data, {id: parent.entityId});
             }
+        },
+        user: {
+            type: UserType,
+            resolve(parent, args) {
+                // return _.find(data, {id: parent.userId});
+            }
         }
     })
+
 });

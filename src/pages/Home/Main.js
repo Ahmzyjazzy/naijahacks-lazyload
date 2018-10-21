@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SearchContainer from './SearchContainer'
-import Tab from '../../components/Tab';
+import Tab from './Tab';
 
 class Main extends Component {
 

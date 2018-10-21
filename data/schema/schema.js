@@ -4,6 +4,9 @@ const {
 } = require('graphql');
 
 /*TODO: import all queries*/
+
+
+
 const getUserDetail = require('../queries/getUserDetail');
 
 /*TODO: import all mutations*/
@@ -25,3 +28,5 @@ module.exports = new GraphQLSchema({
         }
     })
 });
+
+

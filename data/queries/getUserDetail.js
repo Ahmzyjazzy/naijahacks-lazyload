@@ -5,14 +5,16 @@ const {
     GraphQLNonNull,
 } = require('graphql');
 
-const UserType = require('../types/userType');
-const User = require('../models/userModel');
+const UserType = require('../types/UserType');
+const User = require('../models/User');
+
+console.log(Object.keys(User));
 
 const getUserDetail = {
     type: UserType,
     args: {id:{type:GraphQLString}},
-    async resolve(parent, args) {
-        return await User.find({id: args.id});
+    async resolve(parent,args) {
+        return await User.findById(args.id);
     }
 };
 

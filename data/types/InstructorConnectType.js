@@ -1,9 +1,9 @@
 const graphql = require('graphql');
-const EntityType = require('../types/entityType');
+const EntityType = require('./EntityType');
 
 const {GraphQLObjectType,GraphQLString} = graphql;
 module.exports =  new GraphQLObjectType({
-    name: 'Service',
+    name: 'InstructorConnectType',
     fields: ()=> ({
         entityId: {type: GraphQLString},
         name: {type: GraphQLString},

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { capitalizeFirstLetter as capitalise } from '../helpers'
+import { capitalizeFirstLetter as capitalise } from '../../helpers'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
 
-import Select from '../components/Select';
+import Select from '../../components/Select';
 
 export default withRouter(class Tab extends Component {
 

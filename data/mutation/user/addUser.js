@@ -1,9 +1,9 @@
-const UserType = require('../../types/userType');
-const User = require('../../models/userModel');
+const UserType = require('../../types/UserType');
+const User = require('../../models/User');
 const {GraphQLString} = require('graphql');
 
 
-module.exports = {
+const addUser = {
     type: UserType,
     args: {
         fullName: {type: GraphQLString},
@@ -25,3 +25,5 @@ module.exports = {
         return user.save();
     }
 };
+
+module.exports = addUser

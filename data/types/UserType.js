@@ -1,14 +1,15 @@
 const graphql = require('graphql');
-const UserProfileType = require('./userProfileType');
-const EntityType = require('./entityType');
+const UserProfileType = require('./UserProfileType');
+const EntityType = require('./EntityType');
 
-const {GraphQLObjectType,GraphQLList,GraphQLString} = graphql;
+const {GraphQLObjectType,GraphQLID,GraphQLString} = graphql;
+
 module.exports =  new GraphQLObjectType({
     name: 'UserType',
-    fields: () => ({
+    fields: ()=> ({
+        id: {type: GraphQLID},
         fullName: {type: GraphQLString},
         email:  {type: GraphQLString},
-        phoneNumber: {type: GraphQLString},
         password: {type: GraphQLString},
         createdAt: {type: GraphQLString},
         updatedAt: {type: GraphQLString},
@@ -23,7 +24,7 @@ module.exports =  new GraphQLObjectType({
         //     resolve(parent, args){
         //         // return _.filter(data, {userId: parent.id})
         //     }
-        //
+
         // },
         // instructorConnect:{
         //     type: GraphQLString,
