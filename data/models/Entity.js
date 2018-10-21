@@ -15,8 +15,8 @@ const entitySchema = new Schema({
     entityType: String,
     docLink: String,
     isValidated: String,
-    createdAt: TimeStamp,
-    updatedAt: TimeStamp
+    createdAt: {type: Date, default: Date.now},
+    updatedAt: {type: Date, default: Date.now},
 });
 
 module.exports = mongoose.model('Entity', entitySchema);

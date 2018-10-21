@@ -17,8 +17,8 @@ const userProfileSchema = new Schema({
     city: String,
     state: String,
     userType: String,
-    createdAt: String,
-    updatedAt: String,
+    createdAt: {type: Date, default: Date.now},
+    updatedAt: {type: Date, default: Date.now},
 });
 
 module.exports = mongoose.model('UserProfile', userProfileSchema);

@@ -5,6 +5,7 @@ const {GraphQLString} = require('graphql');
 module.exports = {
     type: UserProfileType,
     args: {
+        id: {type: GraphQLID},
         userId: {type: GraphQLString},
         displayName: {type: GraphQLString},
         skills: {type: GraphQLString},
@@ -25,8 +26,8 @@ module.exports = {
         updatedAt:  {type: GraphQLString}
     },
     resolve(parent,args) {
-        let userProfile = new UserProfile({
-            userId: args.userId,
+        let id = {_id: args.id};
+        let update = {
             displayName: args.displayName,
             skills: args.skills,
             socialLinks: args.socialLinks,
@@ -41,9 +42,9 @@ module.exports = {
             city: args.city,
             state: args.state,
             userType: args.userType,
-            createdAt: new Date().getTime(),
             updatedAt: new Date().getTime()
-        });
-        return userProfile.save();
+        };
+        return UserProfile.findByIdAndUpdate(id, update);
+
     }
 };

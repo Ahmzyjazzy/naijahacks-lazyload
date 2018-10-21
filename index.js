@@ -5,7 +5,7 @@ const schema = require('./data/schema/schema')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 7000
 const app = express ()
 
 app.use(cors()); //allow cross origin requests
