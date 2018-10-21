@@ -11,25 +11,25 @@ module.exports =  new GraphQLObjectType({
         password: {type: GraphQLString},
         createdAt: {type: GraphQLString},
         updatedAt: {type: GraphQLString},
-        // userProfile: {
-        //     type: UserProfileType,
-        //     resolve(parent, args) {
-        //         // return _.find(UserProfileModel, {userId: parent.id});
-        //     }
-        // },
-        // entity: {
-        //     type: new GraphQLList(EntityType),
-        //     resolve(parent, args){
-        //         // return _.filter(data, {userId: parent.id})
-        //     }
+        userProfile: {
+            type: UserProfileType,
+            resolve(parent, args) {
+                // return _.find(UserProfileModel, {userId: parent.id});
+            }
+        },
+        entity: {
+            type: new GraphQLList(EntityType),
+            resolve(parent, args){
+                // return _.filter(data, {userId: parent.id})
+            }
 
-        // },
-        // instructorConnect:{
-        //     type: GraphQLString,
-        //     resolve(parent,args) {
-        //         // return _.fi
-        //     }
-        // }
+        },
+        instructorConnect:{
+            type: GraphQLString,
+            resolve(parent,args) {
+                // return _.fi
+            }
+        }
     })
 
 });

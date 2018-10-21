@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
     "babel-register": "^6.26.0",
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "express-graphql": "^0.6.12",
+    "global": "^4.3.2",
     "graphql": "^14.0.2",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.4"

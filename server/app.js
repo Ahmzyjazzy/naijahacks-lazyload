@@ -28,15 +28,11 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 //server listen to port
-<<<<<<< HEAD
 app.listen(4000, ()=> {
     console.log('now listening for requests on port 4000');
 });
-=======
-app.listen(4000, () =>{ console.log('now listening for requests on port 4000') });
 
 /*
 schema - define our obj in the gaphql query
 mongoose schema - define obj in the real databsa
 */
->>>>>>> 89c8443d0b30537df7761aaef2e4151ee48a00bb
