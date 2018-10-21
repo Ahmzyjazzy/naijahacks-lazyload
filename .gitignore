@@ -3,6 +3,9 @@ server/node_modules
 
 client/public
 
+yarn.lock
+
 .idea
 
 naijahacks-lazyload.iml
+
