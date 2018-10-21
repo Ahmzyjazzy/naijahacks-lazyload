@@ -7,7 +7,7 @@ var APP_DIR = path.resolve(__dirname, 'src');
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: APP_DIR + '/index.js',
-    output: {
+  output: {
         path: BUILD_DIR,
         filename: 'bundle.js'
   },

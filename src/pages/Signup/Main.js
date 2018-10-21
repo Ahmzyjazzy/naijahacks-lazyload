@@ -1,48 +1,30 @@
 import React from 'react';
 import instImage from '../../assets/images/inst1.png';
 import { Link } from 'react-router-dom'
+import RegisterForm from './RegisterForm'
 
 
+const css = {
+  minHeight: `${100 - 10}vh`,
+  overFlow: 'hidden'
+}
 export default props => {
   return (
-    <main className="signupBg">
-        <div className="row" style={{marginBottom: '0px',padding: '50px 100px'}}>
-            <div className="col m5 formContainer" style={{}}>
-              <h4 style={{textAlign:'center'}}>Create an account</h4>
-              <p style={{textAlign: 'center'}}>or <Link to="/login" style={{textDecoration: 'underline'}} className="black-text">sign in to your account</Link></p>
-              <form className="">
-                <div className="input-field">
-                  <input id="first_name" type="text" />
-                  <label>Full Name</label>
-                </div>
-                <div className="input-field">
-                  <input id="last_name" type="text"/>
-                  <label>Phone</label>
-                </div>
-                <div className="input-field">
-                  <input id="email" type="email"/>
-                  <label>Email</label>
-                </div>
-                <div className="input-field">
-                  <input id="password" type="password"/>
-                  <label>Password</label>
-                </div>
-                <div className="input-field">
-                  <input id="password" type="password"/>
-                  <label>Confirm Password</label>
-                </div>
-                <button style={{}} className="btn waves-effect waves-light" type="submit" name="action">Get Started
-                  <i className="material-icons right">send</i>
-                </button>
-              </form>
+    <main className="signupBg" style={css}>
+        <div className="row formParent" >
+            <div className="col s12 m5 l5 formContainer">
+              <h5 style={{textAlign:'center'}}>Create an account</h5>
+              <p style={{textAlign: 'center', paddingBottom:'20px'}}>or <Link to="/login" style={{textDecoration: 'underline'}} className="black-text">sign in to your account</Link></p>
+              <RegisterForm />
             </div>
-             <div className="col m7">      
+             <div className="col s12 m7 l7 hide-on-med-and-down">      
               <div className="container">
-                <img src={instImage} className="img-responsive"/>
-                <div className="centered">Connect with your favourite instructor </div>
+                {/* <img src={instImage} className="img-responsive"/> */}
+                <div className="centered" style={{fontSize:'5em'}}>Connect with your favourite instructor </div>
               </div>
             </div>
         </div>
     </main>
   )
 };
+
