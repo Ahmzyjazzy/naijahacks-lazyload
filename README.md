@@ -36,13 +36,13 @@ improve education in Nigeria.
 
 # How to setup project and run locally
 
-- Clone the repository 
+### Clone the repository 
 
 ```
 git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload/tree/development.git
 ```
 
-- Start watching the file and changes
+### Start watching the file and changes
 
 Using yarn
 
@@ -56,7 +56,7 @@ Using npm
 npm run watch
 ```
 
-- Start the development server to serve static files and connect to database
+### Start the development server to serve static files and connect to database
 
 Using yarn
 
@@ -70,7 +70,7 @@ Using npm
 npm run serve
 ```
 
-- Start project to test from the browser
+### Start project to test from the browser
 
 Using yarn
 
