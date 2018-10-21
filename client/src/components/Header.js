@@ -7,6 +7,11 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
 
     render(){
+        const handleGetStartedClick = () => {
+            console.log('The getStarted link was clicked.');
+            this.props.history.push("/signup");
+        };
+
         return(
             <nav style={{backgroundColor: 'white'}} className="navbar-fixed">
                 <div className="nav-wrapper">
@@ -25,7 +30,7 @@ class Header extends React.Component {
                         <li><Link to="/create-workspace" className="black-text">Create Workspace</Link></li>
                         <li><Link to="/frequenty_asked_questions" className="black-text">FAQs</Link></li>
                         <li>
-                            <button className="right btn waves-effect waves-light customBtnColor" type="submit" name="action">Get Started
+                            <button onClick={handleGetStartedClick} className="right btn waves-effect waves-light customBtnColor" type="submit" name="action">Get Started
                                 {/* <i className="material-icons right">send</i> */}
                             </button>
                         </li>

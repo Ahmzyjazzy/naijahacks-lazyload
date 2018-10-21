@@ -94,3 +94,41 @@
   }
 
 }
+
+/* SIGNUP PAGE CSS */
+.signupBg {
+  position: relative; 
+  top: 0px; 
+  background: linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+/* container holding signup for */
+.formContainer{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  background-color: white;
+  padding: 50px!important;
+}
+
+
+ 
