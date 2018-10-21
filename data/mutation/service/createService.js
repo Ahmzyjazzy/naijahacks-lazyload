@@ -1,9 +1,9 @@
 const Service = require('../../models/Service');
 const ServiceType = require('../../types/ServiceType');
-const {GraphQLString,GraphQLBoolean} = require('graphql');
+const {GraphQLString} = require('graphql');
 
 module.exports = {
-    type: EntityType,
+    type: ServiceType,
     args: {
         entityId: {type: GraphQLString},
         name: {type: GraphQLString},
@@ -13,20 +13,11 @@ module.exports = {
         updatedAt: {type: GraphQLString}
     },
     resolve(parent,args) {
-        let entity = new Entity({
-            userId: args.userId,
-            entityName: args.entityName,
+        let entity = new Service({
+            entityId: args.entityId,
+            name: args.entityName,
             description: args.description,
-            avatar: args.avatar,
-            coverPhoto: args.coverPhoto,
-            country: args.country,
-            city: args.city,
-            state: args.state,
-            openingHours: args.openingHours,
-            socialLinks: args.socialLinks,
-            entityType: args.entityType,
-            docLink: args.docLink,
-            isValidated: args.isValidated,
+            serviceType: args.serviceType,
             createdAt: args.createdAt,
             updatedAt: args.updatedAt
         });
