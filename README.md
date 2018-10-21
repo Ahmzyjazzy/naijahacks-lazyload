@@ -42,9 +42,9 @@ improve education in Nigeria.
 git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload/tree/development.git
 ```
 
-## Start watching the file and changes
+- Start watching the file and changes
 
-Using Yarn
+Using yarn
 
 ```
 yarn run watch
@@ -56,9 +56,9 @@ Using npm
 npm run watch
 ```
 
-## Start the development server to serve static files and connect to database
+- Start the development server to serve static files and connect to database
 
-Using Yarn
+Using yarn
 
 ```
 yarn run serve
@@ -70,12 +70,12 @@ Using npm
 npm run serve
 ```
 
-## Start project to test from the browser, it will automatc open the browser using --open flag
+- Start project to test from the browser
 
-Using Yarn
+Using yarn
 
 ```
-yarn star
+yarn start
 ```
 
 Using npm
