@@ -48,7 +48,7 @@ improve education in Nigeria.
 ### Clone the repository 
 
 ```
-git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload/tree/development.git
+git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload.git
 ```
 
 ### Install all dependencies
