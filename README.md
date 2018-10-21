@@ -35,12 +35,35 @@ improve education in Nigeria.
 - Reduce rate of unemployment in Nigeria.
 
 
+# Top-level directory layout
+
+    .
+    ├── data                    # GraphQl files (alternatively `graphql` or `server`)
+    ├── public                  # Compiled files (alternatively `dist`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    └── README.md   
+
+
 # How to setup project and run locally
 
 ### Clone the repository 
 
 ```
-git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload/tree/development.git
+git clone https://github.com/Ahmzyjazzy/naijahacks-lazyload.git
+```
+
+### Install all dependencies
+
+Using yarn
+
+```
+yarn install
+```
+
+Using npm
+
+```
+npm install
 ```
 
 ### Start watching the file and changes
@@ -83,14 +106,7 @@ Using npm
 
 ```
 npm start
-```
-
-### Top-level directory layout
-
-    .
-    ├── public                  # Compiled files (alternatively `dist`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    └── README.md               
+```            
 
 
 
