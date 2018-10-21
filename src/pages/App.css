@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 3s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #222;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* customize */
+
+.customBtnColor {
+  position: relative; 
+  top: 14px; 
+  background: linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important;
+}
+
+.customTxt {
+  background: -webkit-linear-gradient(rgb(233, 30, 99), rgb(30, 77, 146));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* typography */
+.flow-text {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.subdesc {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* filter */
+.filter-container{  
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding: 0 10px;
+  margin: 0 0;
+  height: 49px;
+}
+
+.filter-container li a {
+  color: #222 !important;
+}
+
+.filter-container li.active {
+  border-bottom: 3px solid  #222;
+}
+
+/* footer */
+.page-footer {
+  background-color: rgb(34, 34, 34);
+}
+
+.page-footer .footer-copyright {
+  border-top:1px solid rgb(74, 72, 72);
+}
+
+@media only screen and (max-width: 360px) {
+
+  .flow-text {
+      font-size: 1.2rem;
+  }
+
+  .subdesc {
+      font-size: 1em;
+      text-align: center;
+  }
+
+  .searchcont {
+    width: 80%;
+    background: 'red';
+  }
+
+}
+
+/* SIGNUP PAGE CSS */
+.signupBg {
+  position: relative; 
+  top: 0px; 
+  background: linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+/* container holding signup for */
+.formContainer{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  background-color: white;
+  padding: 50px!important;
+}
+
+
+ 
