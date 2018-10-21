@@ -10,9 +10,9 @@ app.use(cors()); //allow cross origin requests
 
 // process.env.NODE_ENV = 'development';
 
-console.log(' env ? ', process.env.NODE_ENV == 'development', process.env.NODE_ENV)
+console.log(' env ? ', process.env.NODE_ENV == 'development', process.env.NODE_ENV);
 
-const url = (process.env.NODE_ENV == 'development') ? 'mongodb://localhost:27017/connecto' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/connecto';
+const url = 'mongodb://lazyload:lazyload3@ds237373.mlab.com:37373/connecto'; //(process.env.NODE_ENV == 'development') ? 'mongodb://localhost:27017/connecto' : 'mongodb://ahmzyjazzy:support123@ds133353.mlab.com:33353/connecto';
 
 //connect to mlab database
 mongoose.connect(url,{useNewUrlParser: true})
@@ -29,9 +29,7 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 //server listen to port
-app.listen(4000, ()=> {
-    console.log('now listening for requests on port 4000');
-});
+app.listen(4000, () =>{ console.log('now listening for requests on port 4000') });
 
 /*
 schema - define our obj in the gaphql query

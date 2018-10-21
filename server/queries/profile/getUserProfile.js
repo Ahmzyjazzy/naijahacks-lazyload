@@ -4,7 +4,7 @@ const {GraphQLString} = require('graphql');
 
 
 module.exports = {
-    type: UserType,
+    type: UserProfileType,
     args: {
         fullName: {type: GraphQLString},
         email:  {type: GraphQLString},
