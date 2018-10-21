@@ -8,8 +8,8 @@ const instructorConnectSchema = new Schema({
     bookingStatus: String,
     dateConfirmed: String, 
     paymentStatus: String,
-	createdAt: TimeStamp,
-    updatedAt: TimeStamp
+    createdAt: {type: Date, default: Date.now},
+    updatedAt: {type: Date, default: Date.now},
 });
 
 module.exports = mongoose.model('InstructorConnect', instructorConnectSchema);

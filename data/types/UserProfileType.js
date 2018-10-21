@@ -1,11 +1,13 @@
 const graphql = require('graphql');
+
 const User = require('../models/User');
 const UserType = require('./UserType');
 
-const {GraphQLObjectType,GraphQLString, GraphQLList} = graphql;
+const {GraphQLObjectType,GraphQLString, GraphQLID} = graphql;
 module.exports =  new GraphQLObjectType({
     name: 'UserProfileType',
     fields: ()=> ({
+        id: {type: GraphQLID},
         userId: {type: GraphQLString},
         displayName:  {type: GraphQLString},
         skills:  {type: GraphQLString},
@@ -23,13 +25,7 @@ module.exports =  new GraphQLObjectType({
         zip:  {type: GraphQLString},
         userType:  {type: GraphQLString},
         createdAt: {type: GraphQLString},
-        updatedAt: {type: GraphQLString},
-        user: {
-            type: UserType,
-            resolve(parent, args) {
-                // return _.find(User, {id: parent.userId});
-            }
-        },
+        updatedAt: {type: GraphQLString}
     })
 
 });

@@ -6,8 +6,8 @@ const serviceSchema = new Schema({
     name: String, 
     description: String,
     serviceType: String,
-	createdAt: TimeStamp,
-    updatedAt: TimeStamp
+    createdAt: {type: Date, default: Date.now},
+    updatedAt: {type: Date, default: Date.now},
 });
 
 module.exports = mongoose.model('Service', serviceSchema);
