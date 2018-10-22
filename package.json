@@ -10,8 +10,7 @@
     "watch": "webpack -d --watch",
     "build": "webpack",
     "serve": "nodemon index.js",
-    "start": "webpack-dev-server --open --compress --mode development"
-
+    "start": "webpack-dev-server -d --watch --open --port 7000 --compress --mode development"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
