@@ -17,7 +17,7 @@ module.exports = {
         socialLinks: {type: GraphQLString},
         entityType: {type: GraphQLString},
         docLink: {type: GraphQLString},
-        isValidated: {type: GraphQLBoolean},
+        isValidated: {type: GraphQLString},
         createdAt: {type: GraphQLString},
         updatedAt: {type: GraphQLString}
     },

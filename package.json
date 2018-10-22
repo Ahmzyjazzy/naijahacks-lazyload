@@ -11,6 +11,7 @@
     "build": "webpack",
     "serve": "nodemon index.js",
     "start": "webpack-dev-server --open --compress --mode development"
+
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",

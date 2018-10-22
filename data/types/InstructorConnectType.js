@@ -1,10 +1,12 @@
 const graphql = require('graphql');
 const EntityType = require('./EntityType');
+const Entity = require('../models/Entity');
 
-const {GraphQLObjectType,GraphQLString} = graphql;
+const {GraphQLObjectType,GraphQLString,GraphQLID} = graphql;
 module.exports =  new GraphQLObjectType({
     name: 'InstructorConnectType',
     fields: ()=> ({
+        id: {type: GraphQLID},
         entityId: {type: GraphQLString},
         name: {type: GraphQLString},
         description: {type: GraphQLString},
@@ -14,7 +16,7 @@ module.exports =  new GraphQLObjectType({
         entity: {
             type: EntityType,
             resolve(parent, args) {
-                // return _.find(data, {id: parent.entityId});
+                return Entity.findById(parent.entityId);
             }
         }
     })

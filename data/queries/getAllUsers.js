@@ -3,12 +3,11 @@ const {GraphQLID} = require('graphql');
 const UserType = require('../types/UserType');
 const User = require('../models/User');
 
-const getUserDetail = {
+const getAllUsers = {
     type: UserType,
-    args: {id:{type:GraphQLID}},
     async resolve(parent,args) {
-        return await User.findById(args.id);
+    return await User.find({});
     }
 };
 
-module.exports = getUserDetail
+module.exports = getAllUsers

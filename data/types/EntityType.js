@@ -2,10 +2,14 @@ const graphql = require('graphql');
 const UserType = require('./UserType');
 const ReviewType = require('./ReviewType');
 
-const {GraphQLObjectType,GraphQLString,GraphQLBoolean} = graphql;
+const User = require('../models/User');
+const Review = require('../models/Review');
+
+const {GraphQLObjectType,GraphQLString,GraphQLID} = graphql;
 module.exports =  new GraphQLObjectType({
     name: 'EntityType',
     fields: ()=> ({
+        id: {type: GraphQLID},
         userId: {type: GraphQLString},
         entityName:  {type: GraphQLString},
         description:  {type: GraphQLString},
@@ -18,22 +22,22 @@ module.exports =  new GraphQLObjectType({
         socialLinks:  {type: GraphQLString},
         entityType:  {type: GraphQLString},
         docLink:  {type: GraphQLString},
-        isValidated: GraphQLBoolean,
+        isValidated: {type: GraphQLString},
         createdAt: {type: GraphQLString},
         updatedAt: {type: GraphQLString},
-        user: {
-            type: UserType,
-            resolve(parent, args){
-                // return _.filter(data, {id: parent.userId})
-            }
-
-        },
-        review: {
-            type: ReviewType,
-            resolve(parent, args){
-                // return _.filter(data, {entityId: parent.id})
-            }
-        },
+        // user: {
+        //     type: UserType,
+        //     resolve(parent, args){
+        //         return User.findById(parent.userId)
+        //     }
+        //
+        // },
+        // review: {
+        //     type: ReviewType,
+        //     resolve(parent, args){
+        //         return Review.findById(parent.userId)
+        //     }
+        // },
     })
 
 });

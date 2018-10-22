@@ -3,7 +3,7 @@ const ReviewType = require('../../types/ReviewType');
 const {GraphQLString} = require('graphql');
 
 module.exports = {
-    type: ServiceType,
+    type: ReviewType,
     args: {
         entityId: {type: GraphQLString},
         instructorConnectId: {type: GraphQLString},
@@ -12,13 +12,13 @@ module.exports = {
         updatedAt: {type: GraphQLString}
     },
     resolve(parent,args) {
-        let service = new Service({
+        let review = new Review({
             entityId: args.entityId,
             instructorConnectId: args.instructorConnectId,
             rating: args.rating,
             createdAt: args.createdAt,
             updatedAt: args.updatedAt
         });
-        return service.save();
+        return review.save();
     }
 };

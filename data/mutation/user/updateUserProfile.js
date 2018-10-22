@@ -1,6 +1,6 @@
 const UserProfile = require('../../models/UserProfile');
 const UserProfileType = require('../../types/UserProfileType');
-const {GraphQLString} = require('graphql');
+const {GraphQLID,GraphQLString} = require('graphql');
 
 module.exports = {
     type: UserProfileType,

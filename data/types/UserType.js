@@ -6,7 +6,7 @@ const EntityType = require('./EntityType');
 //Import Model
 const UserProfile = require('../models/UserProfile');
 
-const {GraphQLObjectType,GraphQLID,GraphQLString, GraphQLList} = graphql;
+const {GraphQLObjectType,GraphQLID,GraphQLString} = graphql;
 
 module.exports =  new GraphQLObjectType({
     name: 'UserType',
@@ -21,7 +21,10 @@ module.exports =  new GraphQLObjectType({
         profile: {
             type: UserProfileType,
             async resolve(parent, args) {
-                return await UserProfile.find({userId: parent.id});
+                console.log( parent.id);
+                const res = await UserProfile.find({userId: parent.id});
+                console.log(res);
+                return res;
             }
         }
     })
