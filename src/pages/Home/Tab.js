@@ -3,7 +3,7 @@ import { capitalizeFirstLetter as capitalise } from '../../helpers'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
 import Select from '../../components/Select';
-// import instImage from '../../assets/images/inst1.png';
+import instImage from '../../assets/images/inst1.png';
 
 import { listing } from '../../store/listing';
 
