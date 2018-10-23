@@ -34,6 +34,32 @@
   background: linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important;
 }
 
+.chip {
+  background: linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important;
+  color: #fff;
+}
+
+
+.about .collection .collection-item {
+  font-weight: 600;
+}
+
+.review .collection-item.avatar {
+  display: flex;
+  flex-flow: column;
+}
+
+.review .collection-item.avatar .title {
+  color: #222;
+  font-weight: 600;
+}
+
+.collection .collection-item.avatar .secondary-content {
+  position: relative;
+  top: 4px;
+  left: -2px;
+}
+
 .customTxt {
   background: -webkit-linear-gradient(rgb(233, 30, 99), rgb(30, 77, 146));
   -webkit-background-clip: text;
@@ -204,8 +230,22 @@
 }
 
 .profileSection .review {
-    width: 70%;
+    width: 50%;
     padding: 20px;
+}
+
+.profileSection .related_search {
+  width: 20%;
+  padding: 20px;
+}
+
+.collapsible-body {
+  padding: 5px;
+}
+
+/*  */
+#search{
+  border-radius: 4px; border: 1px solid rgb(204, 204, 204); padding-left: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -226,6 +266,25 @@
 
   .profileSection .review,
   .profileSection .about  {
+    width: 100%;
+  }
+
+  .banner {
+    flex-flow: column;
+    padding: 10px;
+  }
+
+  .banner h2 {
+    font-size: 2em;
+  }
+  
+  .profileImg {
+    position: relative;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  #search {
     width: 100%;
   }
 

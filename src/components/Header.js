@@ -31,6 +31,7 @@ class Header extends React.Component {
                         <li><Link to="/instructor-signup" className="black-text">Become an Instructor</Link></li>
                         <li><Link to="/create-workspace" className="black-text">Create Workspace</Link></li>
                         <li><Link to="/frequenty_asked_questions" className="black-text">FAQs</Link></li>
+                        <li><Link to="/login" className="black-text">Login</Link></li>
                         <li>
                             <button onClick={handleGetStartedClick} className="right btn waves-effect waves-light customBtnColor" type="submit" name="action">Get Started
                                 {/* <i className="material-icons right">send</i> */}

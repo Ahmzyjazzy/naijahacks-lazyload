@@ -30,7 +30,6 @@ export default withRouter(class Tab extends Component {
     const tabList = this.props.tabList;
     const activeTab = this.state.activeTab;
 
-    console.log(listing);
 
     return (
         <div className="row">
