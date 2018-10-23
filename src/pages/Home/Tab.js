@@ -3,7 +3,7 @@ import { capitalizeFirstLetter as capitalise } from '../../helpers'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
 import Select from '../../components/Select';
-import instImage from '../../assets/images/inst1.png';
+// import instImage from '../../assets/images/inst1.png';
 
 import { listing } from '../../store/listing';
 
@@ -50,13 +50,13 @@ export default withRouter(class Tab extends Component {
                         <div id={i} className="col s12" className={activeTab == item ? "active" : "hide"} key={i}>{
                             listing.map((entity)=>{
                                 return(
-                                    <div className="col s12 m3 l3" key={`${item}${entity.userId}`}>
+                                    <div className="col s12 m3 l3" key={`${item}${entity.id}`}>
                                         <div className="card">
                                             <div className="card-image waves-effect waves-block waves-light">
-                                            <img className="activator" src={instImage} />
+                                            {/* <img className="activator" src={instImage} /> */}
                                             </div>
                                             <div className="card-content">
-                                            <span className="card-title activator grey-text text-darken-4">Card Title<i className="material-icons right">more_vert</i></span>
+                                            <span className="card-title activator grey-text text-darken-4">{entity.entityName}<i className="material-icons right">more_vert</i></span>
                                             <p><Link to="/profile" >This is a link</Link></p>
                                             </div>
                                             <div className="card-reveal">
