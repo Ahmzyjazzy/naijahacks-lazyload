@@ -47,7 +47,6 @@ export default withRouter(class Tab extends Component {
                 return (
                     <div className="row"  key={i}>
                         <div id={i} className="col s12" className={activeTab == item ? "active" : "hide"} key={i}>{
-<<<<<<< HEAD
                             listing.slice(89).map((entity)=>{
                                 if(entity.entityType.toLocaleLowerCase() == item.toLowerCase()){
                                     exist = true;
@@ -68,22 +67,6 @@ export default withRouter(class Tab extends Component {
                                                 <span className="card-title grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
                                                 <p>{entity.description}</p>
                                                 </div>
-=======
-                            listing.map((entity)=>{
-                                return(
-                                    <div className="col s12 m3 l3" key={`${item}${entity.id}`}>
-                                        <div className="card">
-                                            <div className="card-image waves-effect waves-block waves-light">
-                                            {/* <img className="activator" src={instImage} /> */}
-                                            </div>
-                                            <div className="card-content">
-                                            <span className="card-title activator grey-text text-darken-4">{entity.entityName}<i className="material-icons right">more_vert</i></span>
-                                            <p><Link to="/profile" >This is a link</Link></p>
-                                            </div>
-                                            <div className="card-reveal">
-                                            <span className="card-title grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
-                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
->>>>>>> b285bb7a0a6317d138a17838318dcf3528ea6749
                                             </div>
                                         </div>
                                     )
