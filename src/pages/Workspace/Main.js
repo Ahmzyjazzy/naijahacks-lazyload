@@ -1,7 +1,7 @@
 import React from 'react';
-import instImage from '../../assets/images/inst1.png';
+// import instImage from '../../assets/images/inst1.png';
 import { Link } from 'react-router-dom'
-import RegisterForm from './RegisterForm'
+import EntityForm from './EntityForm'
 
 
 const css = {
@@ -16,7 +16,7 @@ export default class extends React.Component {
               <div className="col s12 m5 l5 formContainer">
                 <h5 style={{textAlign:'center'}}>Create an account</h5>
                 <p style={{textAlign: 'center', paddingBottom:'20px'}}>or <Link to="/login" style={{textDecoration: 'underline'}} className="black-text">sign in to your account</Link></p>
-                <RegisterForm />
+                <EntityForm />
               </div>
               <div className="col s12 m7 l7 hide-on-med-and-down">      
                 <div className="container">
