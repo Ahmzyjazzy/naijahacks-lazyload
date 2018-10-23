@@ -16,7 +16,7 @@ class Header extends React.Component {
             this.props.history.push("/signup");
         };
 
-        const user = this.props.data;
+        const user = window.localStorage.getItem('userInfo') ? JSON.parse(window.localStorage.getItem('userInfo')) : "";
         
         return(
             <nav style={{backgroundColor: 'white'}} className="navbar-fixed">
