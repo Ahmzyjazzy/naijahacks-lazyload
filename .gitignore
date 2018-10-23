@@ -7,5 +7,6 @@ yarn.lock
 .idea
 naijahacks-lazyload.iml
 
-#dist
-public
+#build folder
+public/
+

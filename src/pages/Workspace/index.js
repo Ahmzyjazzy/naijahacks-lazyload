@@ -1,17 +1,16 @@
 import React, {Fragment} from 'react';
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import SignupLayout from './Main'
 
-export default class extends React.Component {
-  render(){
+import Header from '../../components/Header';
+import EntityForm from '../../components/EntityForm';
+import Footer from '../../components/Footer';
+
+export default props => {
     return (
-      <Fragment>
-        <Header />
-        <SignupLayout />
-        <Footer />
-      </Fragment>   
+        <Fragment>
+            <Header />
+            <EntityForm />
+            <Footer />
+        </Fragment>
     )
-  }
-  
+
 };
