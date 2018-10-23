@@ -25,7 +25,7 @@ class RegisterForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.addBookMutation({
+        this.props.createUser({
             variables:{
                 fullName: `${this.state.first_name} ${this.state.last_name}` ,
                 email:  this.state.email,

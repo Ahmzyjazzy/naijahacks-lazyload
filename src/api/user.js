@@ -25,6 +25,28 @@ const getProfileData = gql`
     }
 `
 
+const getEntity = gql`
+    query($id:ID){
+        getEntity(id: $id) {
+            id
+            userId
+            entityName
+            description
+            avatar
+            country
+            coverPhoto
+            city
+            state
+            openingHours
+            socialLinks
+            entityType
+            docLink
+            isValidated
+            createdAt
+            updatedAt
+        }
+    }
+`
 
 /* Mutations */
 
@@ -39,7 +61,51 @@ const createUser = gql`
     }
 `
 
+const createEntity = gql`
+    mutation (
+        $userId: String!,$entityName: String!,$description: String!,
+        $avatar: String!,$coverPhoto: String!,$country: String!,$city: String!,
+        $state: String!,$openingHours: String!,$socialLinks: String!,
+        $entityType: String!,$docLink: String!,$isValidated: String!
+    )
+    {
+        createEntity(
+            userId: $userId,
+            entityName: $entityName,
+            description: $description,
+            avatar: $avatar,
+            coverPhoto: $coverPhoto,
+            country: $country,
+            city: $city,
+            state: $state,
+            openingHours: $openingHours,
+            socialLinks: $socialLinks,
+            entityType: $entityType,
+            docLink: $docLink,
+            isValidated: $isValidated) {
+            id
+            userId
+            entityName
+            description
+            avatar
+            coverPhoto
+            country
+            city
+            state
+            openingHours
+            socialLinks
+            entityType
+            docLink
+            isValidated
+            createdAt
+            updatedAt
+        }
+    }
+`
+
 export { 
     getProfileData, 
-    createUser, 
+    createUser,
+    createEntity,
+    getEntity
 }
