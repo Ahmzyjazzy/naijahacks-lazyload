@@ -1,8 +1,5 @@
 const {
-    GraphQLList,
     GraphQLString,
-    GraphQLInt,
-    GraphQLNonNull,
 } = require('graphql');
 
 const UserType = require('../types/UserType');

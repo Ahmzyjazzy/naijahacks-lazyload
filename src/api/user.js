@@ -1,9 +1,19 @@
 import { gql } from 'apollo-boost';
 
 /* Queries */
-const getProfileData = gql`
-    query($id:ID){
+const getProfileDetail = gql`
+    query($id:String){
         getUserDetail(id:$id){
+            fullName
+            email
+            phoneNumber
+            id
+        }
+    }
+`
+const getProfileData = gql`
+    query($id:String){
+        getUserProfile(id:$id){
             id
             displayName
             skills
@@ -24,7 +34,16 @@ const getProfileData = gql`
         }
     }
 `
-
+const getProfileDataByEmail = gql`
+    query($email:String){
+        getProfileDataByEmail(email:$email){
+            fullName
+            phoneNumber
+            email
+            id
+        }
+    }
+`
 
 /* Mutations */
 
@@ -41,5 +60,6 @@ const createUser = gql`
 
 export { 
     getProfileData, 
+    getProfileDataByEmail,
     createUser, 
 }

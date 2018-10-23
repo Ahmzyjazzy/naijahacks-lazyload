@@ -1,7 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import { graphql, compose } from 'react-apollo';
-import { createUser, getProfileData } from '../../api/user';
+import { createUser } from '../../api/user';
+import { withContext } from '../../context'
 
 class RegisterForm extends React.Component {
     constructor(props) {
@@ -14,7 +15,8 @@ class RegisterForm extends React.Component {
           password: '',
           password2: '',
       };
-  
+      // preserve the initial state in a new object
+      this.baseState = this.state   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -25,45 +27,47 @@ class RegisterForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.addBookMutation({
+        this.props.createUser({
             variables:{
                 fullName: `${this.state.first_name} ${this.state.last_name}` ,
                 email:  this.state.email,
                 password: this.state.password,
                 phoneNumber: this.state.phone,
             },
-            //refetching query to update the ui
-            refetchQueries: [{ query: getProfileData }]
+        }).then((res)=>{
+            if(res)
+            console.log('...now navigate to login page', res.data);
+            M.toast({html: 'Registration successful! You can login with your credentials'})
+            this.setState(this.baseState)
         });  
-    }
+    } 
 
     render() {
-        console.log(this.props, this.props.match);
 
         return (
             <form className="" onSubmit={ this.handleSubmit }>
                 <div className="input-field col s12 m6">
-                    <input id="first_name" type="text" onChange={(e)=> this.setState({first_name: e.target.value})} />
+                    <input id="first_name" type="text" required={true} value={this.state.first_name} onChange={(e)=> this.setState({first_name: e.target.value})} />
                     <label>First Name</label>
                 </div>
                 <div className="input-field col s12 m6">
-                    <input id="last_name" type="text" onChange={(e)=> this.setState({last_name: e.target.value})} />
+                    <input id="last_name" type="text" required={true} value={this.state.last_name} onChange={(e)=> this.setState({last_name: e.target.value})} />
                     <label>Last Name</label>
                 </div>
                 <div className="input-field col s12 m6">
-                    <input id="phone" type="number" onChange={(e)=> this.setState({phone: e.target.value})} />
+                    <input id="phone" type="number" required={true} value={this.state.phone} onChange={(e)=> this.setState({phone: e.target.value})} />
                     <label>Phone</label>
                 </div>
                 <div className="input-field col s12 m6">
-                    <input id="email" type="email" onChange={(e)=> this.setState({email: e.target.value})} />
+                    <input id="email" type="email" required={true} value={this.state.email} onChange={(e)=> this.setState({email: e.target.value})} />
                     <label>Email</label>
                 </div>
                 <div className="input-field col s12">
-                    <input id="password" type="password" onChange={(e)=> this.setState({password: e.target.value})} />
+                    <input id="password" type="password" required={true} value={this.state.password} onChange={(e)=> this.setState({password: e.target.value})} />
                     <label>Password</label>
                 </div>
                 <div className="input-field col s12">
-                    <input id="password2" type="password" onChange={(e)=> this.setState({password2: e.target.value})} />
+                    <input id="password2" type="password" required={true} value={this.state.password2} onChange={(e)=> this.setState({password2: e.target.value})} />
                     <label>Confirm Password</label>
                 </div>
                 <button className="btn waves-effect waves-light" type="submit" name="action">Register
@@ -74,11 +78,11 @@ class RegisterForm extends React.Component {
     }
 }
 
-export default withRouter(
-    compose(
-        //binding multiple queries to one component
-        graphql(createUser, {name:"createUser"}),
-        graphql(getProfileData, {name:"getProfileData"})
-    )(RegisterForm)
+export default withContext(
+    withRouter(
+        compose(
+            graphql(createUser, {name:"createUser"})
+        )(RegisterForm)
+    )
 )
 

@@ -9,6 +9,7 @@ const {
 
 const getUserDetail = require('../queries/getUserDetail');
 const getUserProfile = require('../queries/getUserProfile');
+const getProfileDataByEmail = require('../queries/getProfileDataByEmail');
 
 /*TODO: import all mutations*/
 const addUser = require('../mutation/user/addUser');
@@ -21,6 +22,7 @@ module.exports = new GraphQLSchema({
         /* list all queries here */
             getUserDetail,
             getUserProfile,
+            getProfileDataByEmail
         },
     }),
     mutation: new GraphQLObjectType({
