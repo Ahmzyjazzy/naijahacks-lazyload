@@ -1,6 +1,4 @@
-const {
-    GraphQLString,
-} = require('graphql');
+const {GraphQLString} = require('graphql');
 
 const UserProfileType = require('../types/UserProfileType');
 const UserProfile = require('../models/UserProfile');

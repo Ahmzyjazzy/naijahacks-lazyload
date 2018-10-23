@@ -5,13 +5,21 @@ import { listing } from '../../store/listing';
 
 export default class extends React.Component {
 
+    modal = ''
+
     componentDidMount(){
         const elems = document.querySelectorAll('.materialboxed');
         const instances = M.Materialbox.init(elems, {});
+
+        const elems2 = document.querySelectorAll('.modal');
+        this.modal = M.Modal.init(elems, options);
+        
     }
 
   render(){
     
+    this.modal.open()
+
     return (
       <Fragment>
         <Header />
