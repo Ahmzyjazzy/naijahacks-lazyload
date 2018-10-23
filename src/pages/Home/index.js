@@ -1,15 +1,21 @@
 import React, { Component, Fragment } from 'react';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import HomaLayout from './Main'
+import Main from './Main'
 
-class Layout extends Component {
+import { graphql, compose } from 'react-apollo';
+import { getProfileData } from '../../api/user';
+
+
+class Home extends Component {
 
     render(){
+                
+
         return (
             <Fragment>
                 <Header />
-                <HomaLayout />
+                <Main />
                 <Footer />
             </Fragment>   
         )
@@ -17,5 +23,5 @@ class Layout extends Component {
      
 }
 
-export default Layout
+export default Home
 

@@ -12,6 +12,8 @@ class Header extends React.Component {
             this.props.history.push("/signup");
         };
 
+        console.log(`header contents ...`, this.props.data);
+
         return(
             <nav style={{backgroundColor: 'white'}} className="navbar-fixed">
                 <div className="nav-wrapper">

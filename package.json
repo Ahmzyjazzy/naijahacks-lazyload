@@ -7,10 +7,10 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "watch": "webpack -d --watch",
+    "watch": "webpack -d --watch --open --port 7000",
     "build": "webpack",
     "serve": "nodemon index.js",
-    "start": "webpack-dev-server -d --watch --open --port 5000 --compress --mode development"
+    "start": "webpack-dev-server --open --port 7000 --compress --mode development"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",

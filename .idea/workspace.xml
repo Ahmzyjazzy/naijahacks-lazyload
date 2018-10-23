@@ -2,8 +2,130 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c439d18c-6dba-40dc-ad75-32d141f27e84" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data/queries/getProfileDataByEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/0137c8b1003e474c83006916afb03f36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/dist/css/materialize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/dist/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/dist/js/materialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/dist/js/materialize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/extras/noUiSlider/nouislider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/extras/noUiSlider/nouislider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/extras/noUiSlider/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/anime.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/cash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/characterCounter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/chips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/collapsible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/materialbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/parallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/pushpin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/range.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/sidenav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/tapTarget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/toasts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/js/waves.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_chips.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_collapsible.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_color-classes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_color-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_datepicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_icons-material-design.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_materialbox.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_normalize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_preloader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_pulse.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_sidenav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_table_of_contents.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_tapTarget.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_timepicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_toast.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/_waves.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_checkboxes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_file-input.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_input-fields.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_radio-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_range.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_select.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/components/forms/_switches.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/materialize-css/sass/materialize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors~app.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/sample8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Instructor/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Instructor/RegisterForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login/LoginForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Workspace/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Workspace/RegisterForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/listing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mutation/user/updateUserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/mutation/user/updateUserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Instructor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Instructor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFound/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Signup/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Signup/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Signup/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Signup/RegisterForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Signup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Signup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Workspace/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Workspace/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/public/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,22 +141,12 @@
       <file leaf-file-name="RegisterForm.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Signup/RegisterForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="246">
+              <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#!!block;n#handleChange#0;n#RegisterForm#0" />
                 <element signature="n#!!block;n#handleSubmit#0;n#RegisterForm#0" />
+                <element signature="n#!!block;n#render#0;n#RegisterForm#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -43,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Header.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -54,8 +166,17 @@
       <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="178">
+              <caret line="129" column="20" lean-forward="true" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -63,8 +184,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Workspace/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -75,8 +196,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="45" column="55" lean-forward="true" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+            <state relative-caret-position="585">
+              <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -92,6 +213,14 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/public</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +260,6 @@
         <option value="$PROJECT_DIR$/data/types/ReviewType.js" />
         <option value="$PROJECT_DIR$/data/types/ServiceType.js" />
         <option value="$PROJECT_DIR$/data/types/UserType.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/src/pages/Signup/Main.js" />
         <option value="$PROJECT_DIR$/src/pages/Workspace/WorkspaceForm.js" />
@@ -139,10 +267,11 @@
         <option value="$PROJECT_DIR$/data/queries/getAllEntities.js" />
         <option value="$PROJECT_DIR$/src/pages/Signup/RegisterForm.js" />
         <option value="$PROJECT_DIR$/src/components/Select.js" />
-        <option value="$PROJECT_DIR$/src/api/user.js" />
-        <option value="$PROJECT_DIR$/src/pages/Workspace/index.js" />
         <option value="$PROJECT_DIR$/src/components/EntityForm.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/pages/Workspace/index.js" />
+        <option value="$PROJECT_DIR$/src/api/user.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -182,6 +311,17 @@
             <path>
               <item name="naijahacks-lazyload" type="b2602c69:ProjectViewProjectNode" />
               <item name="naijahacks-lazyload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naijahacks-lazyload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="naijahacks-lazyload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naijahacks-lazyload" type="b2602c69:ProjectViewProjectNode" />
+              <item name="naijahacks-lazyload" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,12 +406,12 @@
       <workItem from="1540151074138" duration="9909000" />
       <workItem from="1540196442172" duration="4264000" />
       <workItem from="1540233398933" duration="5581000" />
-      <workItem from="1540277492203" duration="1512000" />
+      <workItem from="1540277492203" duration="2187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33963000" />
+    <option name="totallyTimeSpent" value="34638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,10 +436,11 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.40934843" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18684895" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -310,7 +451,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="0" />
@@ -520,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -579,6 +712,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -597,8 +733,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="45" column="55" lean-forward="true" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        <state relative-caret-position="585">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -616,27 +752,10 @@
     <entry file="file://$PROJECT_DIR$/src/components/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Workspace/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -650,22 +769,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Signup/RegisterForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        <state relative-caret-position="246">
+          <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#handleChange#0;n#RegisterForm#0" />
             <element signature="n#!!block;n#handleSubmit#0;n#RegisterForm#0" />
+            <element signature="n#!!block;n#render#0;n#RegisterForm#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/pages/Workspace/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="129" column="20" lean-forward="true" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>

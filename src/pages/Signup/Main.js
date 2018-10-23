@@ -8,23 +8,26 @@ const css = {
   minHeight: `${100 - 10}vh`,
   overFlow: 'hidden'
 }
-export default props => {
-  return (
-    <main className="signupBg" style={css}>
-        <div className="row formParent" >
-            <div className="col s12 m5 l5 formContainer">
-              <h5 style={{textAlign:'center'}}>Create an account</h5>
-              <p style={{textAlign: 'center', paddingBottom:'20px'}}>or <Link to="/login" style={{textDecoration: 'underline'}} className="black-text">sign in to your account</Link></p>
-              <RegisterForm />
-            </div>
-             <div className="col s12 m7 l7 hide-on-med-and-down">      
-              <div className="container">
-                {/* <img src={instImage} className="img-responsive"/> */}
-                <div className="centered" style={{fontSize:'5em'}}>Connect with your favourite instructor </div>
+export default class extends React.Component {
+  render(){
+    return (
+      <main className="signupBg" style={css}>
+          <div className="row formParent" >
+              <div className="col s12 m5 l5 formContainer">
+                <h5 style={{textAlign:'center'}}>Create an account</h5>
+                <p style={{textAlign: 'center', paddingBottom:'20px'}}>or <Link to="/login" style={{textDecoration: 'underline'}} className="black-text">sign in to your account</Link></p>
+                <RegisterForm />
               </div>
-            </div>
-        </div>
-    </main>
-  )
+              <div className="col s12 m7 l7 hide-on-med-and-down">      
+                <div className="container">
+                  {/* <img src={instImage} className="img-responsive"/> */}
+                  <div className="centered" style={{fontSize:'5em'}}>Connect with your favourite instructor </div>
+                </div>
+              </div>
+          </div>
+      </main>
+    )
+  }
+  
 };
 

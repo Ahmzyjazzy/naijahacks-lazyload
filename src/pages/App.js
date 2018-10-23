@@ -13,6 +13,7 @@ import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import Workspace from '../pages/Workspace'
 import Instructor from '../pages/Instructor'
+import Profile from '../pages/profile'
 import NotFound from '../pages/NotFound'
 
 //apollo client setup
@@ -22,16 +23,19 @@ const client = new ApolloClient({
 
 class App extends Component {
 
-  constructor(props){
-    super(props)
-    this.state = {
-      userLogin: true,
-      userDetail: {}
-    }
+  state = {
+    userLogin: false,
+    userDetail: {}
+  }
+
+  handleRegistrationComplete(data){
+    console.log('...handlereg', this.state);
+    // this.setState({userDetail: data})
   }
 
   getContext = () => ({
-    ...this.state
+    ...this.state,
+    setUserRegInfo: this.handleRegistrationComplete,
   })
 
   render() {
@@ -46,6 +50,7 @@ class App extends Component {
             <Route path="/create-workspace"exact  component={Workspace} />
             <Route path="/instructor-signup" exact component={Instructor} />
             <Route path="/signup" exact component={Signup} />
+            <Route path="/profile/" exact component={Profile} />
             <Route path="*" exact component={NotFound} />
           </Switch>
         </Provider>

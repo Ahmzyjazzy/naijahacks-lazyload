@@ -77,26 +77,8 @@
   border-top:1px solid rgb(74, 72, 72);
 }
 
-@media only screen and (max-width: 360px) {
-
-  .flow-text {
-      font-size: 1.2rem;
-  }
-
-  .subdesc {
-      font-size: 1em;
-      text-align: center;
-  }
-
-  .searchcont {
-    width: 80%;
-    background: 'red';
-  }
-
-}
-
 /* SIGNUP PAGE CSS */
-.signupBg {
+.signupBg, .loginBg {
   position: relative; 
   top: 0px; 
   background: linear-gradient(57deg, rgb(233, 30, 99) 0%, rgb(30, 77, 146) 100%) !important;
@@ -120,6 +102,7 @@
   width: 100%;
   height: auto;
 }
+
 /* container holding signup for */
 .formContainer{
 
@@ -134,4 +117,116 @@
   justify-content: center;
 }
 
+/* login page */
+.flexParent {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 400px;
+  min-height: 300px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  top: 50px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.flexChild {
+  flex: 0 1 100%;
+}
+
+.signupNav {
+  width: 22%;
+    position: relative;
+    margin: 70px auto;
+    color: rgb(255, 255, 255);
+}
+
+.loginBtn {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* homecover */
+
+.backCover{
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 188, 212, 0.67);
+    height: 300px;
+    z-index: 9;
+}
+
+.coverText {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    /* min-height: 300px; */
+    z-index: 0;
+}
+
+/* profile section */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 200px;
+  background: rgba(0, 188, 212, 0.2);
+}
+
+.profileImg {
+  position: absolute;
+  left: 20px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  margin-top: 30px;
+  border: 6px solid rgb(255, 255, 255);
+}
  
+.profileSection {
+  min-height: 500px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.profileSection .about {
+  background: rgb(240, 248, 255);
+    width: 30%;
+    padding: 20px;
+}
+
+.profileSection .review {
+    width: 70%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .flow-text {
+      font-size: 1.2rem;
+  }
+
+  .subdesc {
+      font-size: 1em;
+      text-align: center;
+  }
+
+  .searchcont {
+    width: 80%;
+    background: 'red';
+  }
+
+  .profileSection .review,
+  .profileSection .about  {
+    width: 100%;
+  }
+
+}

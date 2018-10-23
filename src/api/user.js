@@ -1,9 +1,19 @@
 import { gql } from 'apollo-boost';
 
 /* Queries */
-const getProfileData = gql`
-    query($id:ID){
+const getProfileDetail = gql`
+    query($id:String){
         getUserDetail(id:$id){
+            fullName
+            email
+            phoneNumber
+            id
+        }
+    }
+`
+const getProfileData = gql`
+    query($id:String){
+        getUserProfile(id:$id){
             id
             displayName
             skills
@@ -25,6 +35,7 @@ const getProfileData = gql`
     }
 `
 
+
 const getEntity = gql`
     query($id:ID){
         getEntity(id: $id) {
@@ -44,6 +55,18 @@ const getEntity = gql`
             isValidated
             createdAt
             updatedAt
+        }
+    }
+`
+
+
+const getProfileDataByEmail = gql`
+    query($email:String){
+        getProfileDataByEmail(email:$email){
+            fullName
+            phoneNumber
+            email
+            id
         }
     }
 `
@@ -107,5 +130,6 @@ export {
     getProfileData, 
     createUser,
     createEntity,
-    getEntity
+    getEntity,
+    getProfileDataByEmail,
 }

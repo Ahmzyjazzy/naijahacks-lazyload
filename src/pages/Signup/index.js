@@ -3,12 +3,15 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import SignupLayout from './Main'
 
-export default props => {
-  return (
-    <Fragment>
-      <Header />
-      <SignupLayout />
-      <Footer />
-    </Fragment>   
-  )
+export default class extends React.Component {
+  render(){
+    return (
+      <Fragment>
+        <Header />
+        <SignupLayout />
+        <Footer />
+      </Fragment>   
+    )
+  }
+  
 };

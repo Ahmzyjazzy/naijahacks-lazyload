@@ -47,4 +47,4 @@ module.exports = {
         return UserProfile.findByIdAndUpdate(id, update);
 
     }
-};
+}; 
