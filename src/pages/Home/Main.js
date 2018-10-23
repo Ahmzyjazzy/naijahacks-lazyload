@@ -3,7 +3,7 @@ import SearchContainer from './SearchContainer'
 import Tab from './Tab';
 
 //asset
-// import instImage from '../../assets/images/inst1.png';
+import instImage from '../../assets/images/inst1.png';
 
 class Main extends Component {
 
