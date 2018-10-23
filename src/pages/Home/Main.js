@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchContainer from './SearchContainer'
 import Tab from './Tab';
 
-//asset
+// asset
 import instImage from '../../assets/images/inst1.png';
 
 class Main extends Component {
