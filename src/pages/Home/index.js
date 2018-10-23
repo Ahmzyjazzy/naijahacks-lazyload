@@ -10,11 +10,12 @@ import { getProfileData } from '../../api/user';
 class Home extends Component {
 
     render(){
-                
-
+        
+        const userInfo = window.localStorage.getItem('userInfo') ? JSON.parse(window.localStorage.getItem('userInfo')) : "";
+        
         return (
             <Fragment>
-                <Header />
+                <Header data={userInfo} />
                 <Main />
                 <Footer />
             </Fragment>   

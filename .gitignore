@@ -8,5 +8,5 @@ yarn.lock
 naijahacks-lazyload.iml
 
 #build folder
-public/
+public
 
