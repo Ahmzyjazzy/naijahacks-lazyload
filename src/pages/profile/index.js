@@ -12,13 +12,12 @@ export default class extends React.Component {
         const instances = M.Materialbox.init(elems, {});
 
         const elems2 = document.querySelectorAll('.modal');
-        this.modal = M.Modal.init(elems, options);
+        this.modal = M.Modal.init(elems, {});
         
     }
 
   render(){
     
-    this.modal.open()
 
     return (
       <Fragment>

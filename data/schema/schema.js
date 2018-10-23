@@ -45,7 +45,6 @@ module.exports = new GraphQLSchema({
         /* list all queries here */
             getUserDetail,
             getUserProfile,
-            getProfileDataByEmail,
             getAllUsers,
             getEntity,
             getAllEntities,
