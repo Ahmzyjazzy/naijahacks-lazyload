@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { graphql, compose } from 'react-apollo';
 import { createUser } from '../../api/user';
-import { withContext } from '../../context'
 
 class RegisterForm extends React.Component {
     constructor(props) {
@@ -19,7 +18,10 @@ class RegisterForm extends React.Component {
       this.baseState = this.state   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
+      this.userInfo = {};
     }
+
+
   
     handleChange(event) {
       this.setState({value: event.target.value});
@@ -27,19 +29,15 @@ class RegisterForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.createUser({
-            variables:{
-                fullName: `${this.state.first_name} ${this.state.last_name}` ,
-                email:  this.state.email,
-                password: this.state.password,
-                phoneNumber: this.state.phone,
-            },
-        }).then((res)=>{
-            if(res)
-            console.log('...now navigate to login page', res.data);
-            M.toast({html: 'Registration successful! You can login with your credentials'})
-            this.setState(this.baseState)
-        });  
+        this.userInfo = {
+            fullName: `${this.state.first_name} ${this.state.last_name}` ,
+            email:  this.state.email,
+            password: this.state.password,
+            phoneNumber: this.state.phone,
+        } 
+        window.localStorage.setItem('userInfo', JSON.stringify(this.userInfo));
+        this.setState(this.baseState)
+        M.toast({html: 'Registration successful! You can login with your credentials'});
     } 
 
     render() {
@@ -78,11 +76,5 @@ class RegisterForm extends React.Component {
     }
 }
 
-export default withContext(
-    withRouter(
-        compose(
-            graphql(createUser, {name:"createUser"})
-        )(RegisterForm)
-    )
-)
+export default withRouter((RegisterForm));
 

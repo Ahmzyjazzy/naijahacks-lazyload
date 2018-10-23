@@ -22,7 +22,12 @@ class LoginForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.setState({confirmMail: this.state.email})     
+        const userInfo = window.localStorage.getItem('userInfo') ? JSON.parse(window.localStorage.getItem('userInfo')) : "";
+        if(userInfo){
+            (userInfo.email.trim() == this.state.email.trim()) && (userInfo.password.trim() == this.state.password.trim()) ? this.props.history.push("/") : M.toast({html: 'Username or password incorrect'});
+        }else{
+           return M.toast({html: 'Username or password incorrect'}); 
+        }    
     }
 
     render() {
@@ -47,17 +52,5 @@ class LoginForm extends React.Component {
     }
 }
 
-export default withRouter(
-    compose(
-        graphql(getProfileDataByEmail, {name:"getProfileDataByEmail"}, {
-            options: (props)=>{
-                return {
-                    variables: {
-                        email: this.props.email
-                    }
-                }
-            }
-        })
-    )(LoginForm)
-)
+export default withRouter(LoginForm)
 
