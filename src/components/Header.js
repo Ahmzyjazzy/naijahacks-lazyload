@@ -60,8 +60,8 @@ class Header extends React.Component {
                                               top: '18px'
                                     }} className='dropdown-trigger btn customBtnColor' href='' data-target='dropdown1'><i className="material-icons" style={{color: 'rgb(0, 0, 0)',fontSize: '2.5em'}}>account_circle</i> {user.fullName} </a>
                                     <ul id='dropdown1' className='dropdown-content'>
-                                        <li><Link to="/me">My Profile</Link></li>
-                                        <li><Link to="/me/account">Account Setting</Link></li>
+                                        <li><Link to="/me/">My Profile</Link></li>
+                                        <li><Link to="/me/">Account Setting</Link></li>
                                         <li className="divider" tabindex="-1"></li>
                                         <li><a href="" onClick={
                                             (e)=> {
@@ -75,9 +75,7 @@ class Header extends React.Component {
                             </ul>
                         )
                     }
-
-
-                    
+                                        
                 </div>
             </nav>
         )
