@@ -1,14 +1,14 @@
 import React, {Fragment} from 'react';
 
 import Header from '../../components/Header';
-import EntityForm from '../../components/EntityForm';
+import Main from './Main';
 import Footer from '../../components/Footer';
 
 export default props => {
     return (
         <Fragment>
             <Header />
-            <EntityForm />
+            <Main />
             <Footer />
         </Fragment>
     )
