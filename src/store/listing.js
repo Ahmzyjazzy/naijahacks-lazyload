@@ -80,7 +80,7 @@ export const listing = [
        city: 'Oyingbo',
        entityType: 'Instructor',
        skills: [
-           'financial account', 'government policy', 'business maths'
+           'financial account', 'government', 'business maths'
        ]
    }
    

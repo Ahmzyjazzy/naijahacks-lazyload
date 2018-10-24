@@ -61,14 +61,25 @@ export default withRouter(class Tab extends Component {
                                                 <img className="activator" src={entity.avatar} style={{width:'80px', height:'80px',
                                                     borderRadius: '50%',
                                                     border: '2px solid rgb(255, 255, 255)',
-                                                    position: 'absolute'
+                                                    position: 'absolute',
+                                                    top: '10px',
+                                                    left: '10px'
                                                 }} />
                                                 </div>
-                                                <div className="card-content">
+                                                <div className="card-content" style={{minHeight:'225px'}}>
                                                 <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.entityName}<i className="material-icons right">more_vert</i></span>
-                                                <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.state}</span>
-                                                <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.city}</span>
-                                                <p><Link to="/profile" >View more</Link></p>
+                                                <div className="col s12" style={{padding:'0 0', display: 'flex', justifyContent: 'start'}}>
+                                                   <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.state}</span>
+                                                    <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px', paddingLeft:'5px'}}>{entity.city}</span>
+                                                </div>
+                                                {
+                                                    entity.skills.map((skill)=>{
+                                                        return (<div className="chip">
+                                                            {skill}
+                                                        </div>)
+                                                    })
+                                                }
+                                                <p style={{padding: '5px 0', cursor:'pointer'}}><a onClick={ (e)=> { window.localStorage.setItem('currEntity', JSON.stringify(entity)); this.props.history.push('/profile') }}>View more</a></p>
                                                 </div>
                                                 <div className="card-reveal">
                                                 <span className="card-title grey-text text-darken-4">About<i className="material-icons right">close</i></span>
