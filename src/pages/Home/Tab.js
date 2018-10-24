@@ -74,7 +74,7 @@ export default withRouter(class Tab extends Component {
                                                 </div>
                                                 {
                                                     entity.skills.map((skill)=>{
-                                                        return (<div className="chip">
+                                                        return (<div className="chip" key={skill}>
                                                             {skill}
                                                         </div>)
                                                     })

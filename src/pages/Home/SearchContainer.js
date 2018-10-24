@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { listing } from '../../store/listing';
 
 export default class SearchContainer extends Component {
 
