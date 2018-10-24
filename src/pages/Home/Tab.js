@@ -69,8 +69,8 @@ export default withRouter(class Tab extends Component {
                                                 <div className="card-content" style={{minHeight:'225px'}}>
                                                 <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.entityName}<i className="material-icons right">more_vert</i></span>
                                                 <div className="col s12" style={{padding:'0 0', display: 'flex', justifyContent: 'start'}}>
-                                                   <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.state}</span>
-                                                    <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px', paddingLeft:'5px'}}>{entity.city}</span>
+                                                   <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.city}</span>
+                                                    <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px', paddingLeft:'5px'}}>{entity.state}</span>
                                                 </div>
                                                 {
                                                     entity.skills.map((skill)=>{
