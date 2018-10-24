@@ -13,8 +13,8 @@ import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import Workspace from '../pages/Workspace'
 import Instructor from '../pages/Instructor'
-import Profile from '../pages/Profile'
 import UserProfile from '../pages/UserProfile'
+import EntityProfile from '../pages/EntityProfile'
 import NotFound from '../pages/NotFound'
 
 //apollo client setup
@@ -50,8 +50,8 @@ class App extends Component {
             <Route path="/create-workspace"exact  component={Workspace} />
             <Route path="/instructor-signup" exact component={Instructor} />
             <Route path="/signup" exact component={Signup} />
-            <Route path="/profile/" exact component={Profile} />
             <Route path="/me/" exact component={UserProfile} />
+            <Route path="/profile/" exact component={EntityProfile} />
             <Route path="*" exact component={NotFound} />
           </Switch>
         </Provider>
