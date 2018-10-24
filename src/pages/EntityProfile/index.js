@@ -2,8 +2,9 @@ import React, {Fragment} from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header'
-import Footer from '../../components/Footer';
-import naijahacks from '../../assets/images/naijahacks.png';
+import Footer from '../../components/Footer'
+import { listing } from '../../store/listing';
+import naijahacks from '../../assets/images/naijahacks.png'
 
 export default class extends React.Component {
 
@@ -24,7 +25,7 @@ export default class extends React.Component {
 
   render(){
     
-    const user = window.localStorage.getItem('userInfo') ? JSON.parse(window.localStorage.getItem('userInfo')) : "";
+
     return (
       <Fragment>
         <Header />
@@ -32,19 +33,40 @@ export default class extends React.Component {
     backgroundPosition: 'center',
     backgroundSize: 'cover'}}>
                 <i></i>
-                <img className="profileImg materialboxed" src="https://vignette.wikia.nocookie.net/joke-battles/images/5/54/User-icon.png/revision/latest?cb=20180819120210" />
+                <img className="profileImg materialboxed" src="https://pbs.twimg.com/profile_images/1033783498744705024/b5PwJnpq_400x400.jpg" />
                 <div>
-                    <h2>{user.fullName}</h2>
+                    <h2>Ahmed Olanrewaju</h2>
+                    <div>
+                        <div className="chip">
+                            Javascript
+                        </div>
+                        <div className="chip">
+                            Reactjs
+                        </div>
+                        <div className="chip">
+                            Python
+                        </div>
+                        <div className="chip">
+                            Node
+                        </div>
+                        <div className="chip">
+                            Data structure
+                        </div>
+                    </div>
                 </div>
-                {/* <div style={{display:'flex', alignItems:'center'}}>
+                <div style={{display:'flex', alignItems:'center'}}>
                     <button className="right btn waves-effect waves-light" type="submit" name="action" style={{marginBottom:'20px'}} onClick={
                         (e)=> this.modal.open()
                     }>Request Connect</button>
-                </div> */}
+                </div>
             </section>
             <section className="profileSection">
                 {/* profile body */}
                 <div className="about">
+                    <p>
+                    I am [...full-stack web architect, javascript lover and mobile web specialist] campus ambassador 
+                    </p>
+
                     <ul className="collapsible">
                         <li>
                         <div className="collapsible-header"><i className="material-icons">filter_drama</i>Service Offer</div>
@@ -88,12 +110,11 @@ export default class extends React.Component {
                         </li>
                     </ul>
                 </div>
-
                 <div className="review">
                     <ul className="collection">
                         <li className="collection-item avatar">
-                            <img src="http://www.kentforklifttraining.co.uk/images/InstructorTraining.jpg" alt="" className="circle" />
-                            <span className="title">Solution Tutors</span>
+                            <img src="https://pbs.twimg.com/profile_images/1033783498744705024/b5PwJnpq_bigger.jpg" alt="" className="circle" />
+                            <span className="title">James Bond</span>
                             <p>The point of using Lorem Ipsum is that it has a more-or-less ormal distribution of letters, 
                                 as opposed to using 'Content here, content here', making it look like readable English.
                             </p>
@@ -101,12 +122,11 @@ export default class extends React.Component {
                                 <i className="material-icons">grade</i>
                                 <i className="material-icons">grade</i>
                                 <i className="material-icons">grade</i>
-                                <i className="material-icons">grade</i>
                             </a>
                         </li>
                         <li className="collection-item avatar">
-                            <img src="http://www.kentforklifttraining.co.uk/images/InstructorTraining.jpg" alt="" className="circle" />
-                            <span className="title">Magna Institute</span>
+                            <img src="https://pbs.twimg.com/profile_images/1021587970938175490/_E9M9f36_bigger.jpg" alt="" className="circle" />
+                            <span className="title">Esther Mbaike</span>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 
                             </p>
@@ -117,8 +137,8 @@ export default class extends React.Component {
                             </a>
                         </li>
                         <li className="collection-item avatar">
-                            <img src="http://www.kentforklifttraining.co.uk/images/InstructorTraining.jpg" alt="" className="circle" />
-                            <span className="title">Duis Sit Institute</span>
+                            <img src="https://pbs.twimg.com/profile_images/998895967720980480/8STZGRm7_bigger.jpg" alt="" className="circle" />
+                            <span className="title">Seyi Gbadamosi</span>
                             <p>The point of using Lorem Ipsum is that it has a more-or-less
                                 ormal distribution of letters, as opposed to using 'Content here, content here', making 
                                 it look like readable English</p>
@@ -126,13 +146,11 @@ export default class extends React.Component {
                                 <i className="material-icons">grade</i>
                                 <i className="material-icons">grade</i>
                                 <i className="material-icons">grade</i>
-                                <i className="material-icons">grade</i>
-                                <i className="material-icons">grade</i>
                             </a>
                         </li>
                         <li className="collection-item avatar">
-                            <img src="http://www.kentforklifttraining.co.uk/images/InstructorTraining.jpg" alt="" className="circle" />
-                            <span className="title">Pretium Et Rutrum Company</span>
+                            <img src="https://pbs.twimg.com/profile_images/998895967720980480/8STZGRm7_bigger.jpg" alt="" className="circle" />
+                            <span className="title">Olanrewaju Mohmodu</span>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a 
                                 page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                                 ormal distribution of letters, as opposed to using 'Content here, content here', making 
@@ -149,7 +167,6 @@ export default class extends React.Component {
                 <div className="related_search">
 
                 </div>
-
                 <div id="modal1" className="modal">
                     <div className="modal-content">
                     <h4>Modal Header</h4>
