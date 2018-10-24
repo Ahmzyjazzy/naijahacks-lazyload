@@ -71,7 +71,6 @@ class RegisterForm extends React.Component {
                     <label>Confirm Password</label>
                 </div>
                 <button className="btn waves-effect waves-light" type="submit" name="action">Register
-                    <i className="material-icons right">send</i>
                 </button>
               </form>
         );

@@ -13,16 +13,17 @@ export default class extends React.Component {
     return (
       <main className="signupBg" style={css}>
           <div className="row formParent" >
-              <div className="col s12 m5 l5 formContainer">
-                <h5 style={{textAlign:'center'}}>Create a workspace</h5>
-                <EntityForm />
-              </div>
               <div className="col s12 m7 l7 hide-on-med-and-down">      
                 <div className="container">
                   {/* <img src={instImage} className="img-responsive"/> */}
                   <div className="centered" style={{fontSize:'2em'}}>Do you have a space or a tutorial centre ? Where students can organise tutorials. Create your workspace with us to get your target audience.</div>
                 </div>
               </div>
+              <div className="col s12 m5 l5 formContainer">
+                <h5 style={{textAlign:'center'}}>Create a workspace</h5>
+                <EntityForm />
+              </div>
+              
           </div>
       </main>
     )

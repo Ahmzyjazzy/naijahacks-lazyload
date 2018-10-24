@@ -45,7 +45,6 @@ class LoginForm extends React.Component {
                     <label>Password</label>
                 </div>
                 <button className="btn waves-effect waves-light loginBtn" type="submit" name="action">Login
-                    <i className="material-icons right">send</i>
                 </button>
             </form>
         );

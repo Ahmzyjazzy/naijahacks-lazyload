@@ -79,7 +79,6 @@ class EntityForm extends React.Component {
                 </div>
 
                 <button className="btn waves-effect waves-light" type="submit" name="action">Create Workspace
-                    <i className="material-icons right">send</i>
                 </button>
               </form>
         );
