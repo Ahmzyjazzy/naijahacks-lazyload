@@ -50,8 +50,8 @@ class App extends Component {
             <Route path="/create-workspace"exact  component={Workspace} />
             <Route path="/instructor-signup" exact component={Instructor} />
             <Route path="/signup" exact component={Signup} />
-            <Route path="/profile/" exact component={Profile} />
-            <Route path="/me/" exact component={UserProfile} />
+            <Route path="/me/" exact component={Profile} />
+            <Route path="/profile/" exact component={UserProfile} />
             <Route path="*" exact component={NotFound} />
           </Switch>
         </Provider>
