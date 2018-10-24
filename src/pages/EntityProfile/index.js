@@ -25,33 +25,27 @@ export default class extends React.Component {
 
   render(){
     
+    const entityDt = window.localStorage.getItem('currEntity') ? JSON.parse(window.localStorage.getItem('currEntity')) : "";
+
 
     return (
       <Fragment>
         <Header />
-            <section className="banner" style={{backgroundImage: `url(${naijahacks})`, backgroundRepeat:'no-repeat',
+            <section className="banner" style={{backgroundImage: `url(${entityDt.banner})`, backgroundRepeat:'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover'}}>
                 <i></i>
-                <img className="profileImg materialboxed" src="https://pbs.twimg.com/profile_images/1033783498744705024/b5PwJnpq_400x400.jpg" />
+                <img className="profileImg materialboxed" src={entityDt.avatar} />
                 <div>
-                    <h2>Ahmed Olanrewaju</h2>
+                    <h2>{entityDt.entityName}</h2>
                     <div>
-                        <div className="chip">
-                            Javascript
-                        </div>
-                        <div className="chip">
-                            Reactjs
-                        </div>
-                        <div className="chip">
-                            Python
-                        </div>
-                        <div className="chip">
-                            Node
-                        </div>
-                        <div className="chip">
-                            Data structure
-                        </div>
+                        {
+                            entityDt.skills.map((skill)=>{
+                                return (<div className="chip">
+                                    {skill}
+                                </div>)
+                            })
+                        }
                     </div>
                 </div>
                 <div style={{display:'flex', alignItems:'center'}}>
