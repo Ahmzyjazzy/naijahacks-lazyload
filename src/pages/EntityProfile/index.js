@@ -19,6 +19,8 @@ export default class extends React.Component {
 
         const elems3 = document.querySelectorAll('.collapsible');
         const instances2 = M.Collapsible.init(elems3 , {});
+
+        window.scrollTo(0,0);
         
     }
     
@@ -34,14 +36,21 @@ export default class extends React.Component {
             <section className="banner" style={{backgroundImage: `url(${entityDt.banner})`, backgroundRepeat:'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover'}}>
+                <div className="overlay" style={{
+                    position: 'absolute',
+                    background: 'rgba(33, 150, 243, 0.54)',
+                    minHeight: '200px',
+                    width:'100%',
+                    zIndex: 0
+                }}></div>
                 <i></i>
                 <img className="profileImg materialboxed" src={entityDt.avatar} />
-                <div>
-                    <h2>{entityDt.entityName}</h2>
-                    <div>
+                <div style={{zIndex:1}}>
+                    <h2 style={{zIndex:1, color:'#fff'}}>{entityDt.entityName}</h2>
+                    <div tyle={{zIndex:1}}>
                         {
                             entityDt.skills.map((skill)=>{
-                                return (<div className="chip">
+                                return (<div className="chip" key={skill}>
                                     {skill}
                                 </div>)
                             })
