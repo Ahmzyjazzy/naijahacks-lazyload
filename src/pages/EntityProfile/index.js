@@ -77,7 +77,7 @@ export default class extends React.Component {
                         <div className="collapsible-header"><i className="material-icons">place</i>Location</div>
                         <div className="collapsible-body">
                             <ul className="collection" style={{padding:'0 0'}}>
-                                <li className="collection-item">Lagos, Nigeria</li>
+                                <li className="collection-item">{entityDt.city}, {entityDt.state}</li>
                             </ul>
                         </div>
                         </li>
