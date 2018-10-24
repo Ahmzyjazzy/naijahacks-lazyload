@@ -75,7 +75,7 @@ export default withRouter(class Tab extends Component {
                                            <div className="col s12 m3 l3" key={`${item}${entity.id}`}>
                                                <div className="card">
                                                    <div className="card-image waves-effect waves-block waves-light">
-                                                   <img className="activator" src={instImage} />
+                                                   {/* <img className="activator" src={instImage} /> */}
                                                    </div>
                                                    <div className="card-content">
                                                    <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.entityName}<i className="material-icons right">more_vert</i></span>
