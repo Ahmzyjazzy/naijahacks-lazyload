@@ -31,6 +31,8 @@ export default withRouter(class Tab extends Component {
     const activeTab = this.state.activeTab;
     let exist = false;
 
+    console.log(' ()=> ', listing);
+
     return (
         <div className="row">
           <div className="col s12 filter-container">
@@ -47,24 +49,29 @@ export default withRouter(class Tab extends Component {
                 return (
                     <div className="row"  key={i}>
                         <div id={i} className="col s12" className={activeTab == item ? "active" : "hide"} key={i}>{
-                            listing.slice(89).map((entity)=>{
+                            listing.map((entity)=>{
                                 if(entity.entityType.toLocaleLowerCase() == item.toLowerCase()){
                                     exist = true;
                                      return(
                                         <div className="col s12 m3 l3" key={`${item}${entity.id}`}>
                                             <div className="card">
-                                                <div className="card-image waves-effect waves-block waves-light">
-                                                <img className="activator" src={instImage} />
+                                                <div className="card-image waves-effect waves-block waves-light" style={{background:`url(${entity.banner})`, height: '100px',
+                                                    backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
+                                                }}>
+                                                <img className="activator" src={entity.avatar} style={{width:'80px', height:'80px',
+                                                    borderRadius: '50%',
+                                                    border: '2px solid rgb(255, 255, 255)',
+                                                    position: 'absolute'
+                                                }} />
                                                 </div>
                                                 <div className="card-content">
                                                 <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.entityName}<i className="material-icons right">more_vert</i></span>
-                                                <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.country}</span>
                                                 <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.state}</span>
                                                 <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.city}</span>
                                                 <p><Link to="/profile" >View more</Link></p>
                                                 </div>
                                                 <div className="card-reveal">
-                                                <span className="card-title grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
+                                                <span className="card-title grey-text text-darken-4">About<i className="material-icons right">close</i></span>
                                                 <p>{entity.description}</p>
                                                 </div>
                                             </div>
@@ -74,9 +81,14 @@ export default withRouter(class Tab extends Component {
                                         return(
                                            <div className="col s12 m3 l3" key={`${item}${entity.id}`}>
                                                <div className="card">
-                                                   <div className="card-image waves-effect waves-block waves-light">
-                                                   <img className="activator" src={instImage} />
-                                                   </div>
+                                                <div className="card-image waves-effect waves-block waves-light" style={{background:`url(${entity.banner})`, height: '100px',
+                                                        backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'
+                                                    }}>
+                                                    <img className="activator" src={entity.avatar} style={{width:'80px', height:'80px',
+                                                        borderRadius: '50%',
+                                                        border: '2px solid rgb(255, 255, 255)',
+                                                        position: 'absolute'
+                                                    }} />
                                                    <div className="card-content">
                                                    <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.entityName}<i className="material-icons right">more_vert</i></span>
                                                    <span className="card-title activator grey-text text-darken-4" style={{fontWeight: '600',fontSize: '14px'}}>{entity.country}</span><p><Link to="/profile" >View more</Link></p>
