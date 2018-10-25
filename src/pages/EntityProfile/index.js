@@ -114,6 +114,7 @@ export default class extends React.Component {
                     </ul>
                 </div>
                 <div className="review">
+                    <h2 style={{margin: '0 0', fontSize: '1.5em', fontWeight:'600'}}>Review</h2>
                     <ul className="collection">
                         <li className="collection-item avatar">
                             <img src="https://pbs.twimg.com/profile_images/1033783498744705024/b5PwJnpq_bigger.jpg" alt="" className="circle" />
