@@ -32,10 +32,10 @@ class Header extends React.Component {
                     </Link>
                     {
                        (user == "" || user == null) ? (
-                            <ul id="nav-mobile" className="right hide-on-med-and-down" style={{padding: '0 10px'}}>
-                                <li><Link to="/instructor-signup" className="black-text">Become an Instructor</Link></li>
-                                <li><Link to="/create-workspace" className="black-text">Create Workspace</Link></li>
-                                <li><Link to="/frequenty_asked_questions" className="black-text">FAQs</Link></li>
+                            <ul id="nav-mobile" className="right" style={{padding: '0 10px'}}>
+                                <li><Link to="/instructor-signup" className="black-text hide-on-med-and-down">Become an Instructor</Link></li>
+                                <li><Link to="/create-workspace" className="black-text hide-on-med-and-down">Create Workspace</Link></li>
+                                <li><Link to="/frequenty_asked_questions" className="black-text hide-on-med-and-down">FAQs</Link></li>
                                 <li><Link to="/login" className="black-text">Login</Link></li>
                                 <li>
                                     <button onClick={handleGetStartedClick} className="right btn waves-effect waves-light customBtnColor" type="submit" name="action">Get Started
@@ -45,10 +45,10 @@ class Header extends React.Component {
                             </ul>
                         ) : 
                         (
-                            <ul id="nav-mobile" className="right hide-on-med-and-down" style={{padding: '0 10px'}}>
-                                <li><Link to="/instructor-signup" className="black-text">Become an Instructor</Link></li>
-                                <li><Link to="/create-workspace" className="black-text">Create Workspace</Link></li>
-                                <li><Link to="/frequenty_asked_questions" className="black-text">FAQs</Link></li>
+                            <ul id="nav-mobile" className="right" style={{padding: '0 10px'}}>
+                                <li><Link to="/instructor-signup" className="black-text hide-on-med-and-down">Become an Instructor</Link></li>
+                                <li><Link to="/create-workspace" className="black-text hide-on-med-and-down">Create Workspace</Link></li>
+                                <li><Link to="/frequenty_asked_questions" className="black-text hide-on-med-and-down">FAQs</Link></li>
                                 <li>
                                     <a style={{
                                             whiteSpace: 'nowrap',
