@@ -28,7 +28,6 @@ console.log(' env ? ', process.env.NODE_ENV == 'development', process.env.NODE_E
 
 app.use(express.static(__dirname + '/public'))
 
-
 app.get('*', function (request, response){
     response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
